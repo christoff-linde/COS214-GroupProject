@@ -12,17 +12,21 @@
 #if !defined(EQUIPMENT_H)
 #define EQUIPMENT_H
 
-/**
- * @class Equipment
- * @brief 
- */
+ /**
+  * @class Equipment
+  * @brief
+  */
 class Equipment
 {
 public:
-    Equipment(/* args */);
-    ~Equipment();
+	Equipment(/* args */);
+	~Equipment();
 private:
-    /* data */
+	/* data */
 };
 
 #endif // EQUIPMENT_H
+
+#ifndef 1
+
+#endif // !1
