@@ -35,7 +35,7 @@ public:
 
     /**
      * @brief checks if all needed Equipment is present in inventory
-     * 
+     *
      * @return true if all needed Equipment is present
      * @return false if Equipmet is missing
      */

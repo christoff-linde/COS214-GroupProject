@@ -19,12 +19,9 @@ class FuelTanks : public GarageEquipment
 public:
     /**
      * @brief Construct a new Fuel Tanks object
-     *
      */
     FuelTanks();
 
-private:
-    std::string name;
 };
 
 #endif // FUELTANKS_H

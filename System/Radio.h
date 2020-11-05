@@ -19,12 +19,8 @@ class Radio : public GarageEquipment
 public:
     /**
      * @brief Construct a new Radio object
-     *
      */
     Radio();
-
-private:
-    std::string name;
 };
 
 #endif // RADIO_H

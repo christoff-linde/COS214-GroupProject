@@ -1,12 +1,12 @@
 /**
  * @file Monitor.h
  * @author Christoff Linde
- * @brief 
+ * @brief
  * @version 0.1
  * @date 2020-10-31
- * 
+ *
  * @copyright Copyright (c) 2020
- * 
+ *
  */
 
 #include "GarageEquipment.h"
@@ -19,12 +19,8 @@ class Monitor : public GarageEquipment
 public:
     /**
      * @brief Construct a new Monitor object
-     *
      */
     Monitor();
-
-private:
-    std::string name;
 };
 
 
