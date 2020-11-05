@@ -19,12 +19,9 @@ class WaterTanks : public CateringEquipment
 public:
     /**
      * @brief Construct a new Water Tanks object
-     *
      */
     WaterTanks();
 
-private:
-    std::string name;
 };
 
 #endif // WATERTANKS_H

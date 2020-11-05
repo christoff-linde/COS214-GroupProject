@@ -34,7 +34,7 @@ public:
 
 protected:
     std::string type; /** holds the type of Equipment (e.g. GarageEquipment) */
-    std::string name; /** hold the name of the Equipment (e.g. Monitor) */
+    std::string name; /** holds the name of the Equipment (e.g. Monitor) */
 };
 
 #endif // GARAGEEQUIPMENT_H

@@ -19,12 +19,9 @@ class TyreWarmer : public ToolingEquipment
 public:
     /**
      * @brief Construct a new Tyre Warmer object
-     *
      */
     TyreWarmer();
 
-private:
-    std::string name;
 };
 
 #endif // TYREWARMER_H

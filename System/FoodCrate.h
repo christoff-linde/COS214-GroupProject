@@ -19,12 +19,8 @@ class FoodCrate : public CateringEquipment
 public:
     /**
      * @brief Construct a new Food Crate object
-     * 
      */
     FoodCrate();
-
-private:
-    std::string name;
 };
 
 #endif // FOODCRATE_H

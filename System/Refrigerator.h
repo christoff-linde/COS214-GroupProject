@@ -19,12 +19,9 @@ class Refrigerator : public CateringEquipment
 public:
     /**
      * @brief Construct a new Refrigerator object
-     *
      */
     Refrigerator();
 
-private:
-    std::string name;
 };
 
 #endif // REFRIGERATOR_H
