@@ -8,13 +8,19 @@ class VirtualRaceTrack
 
 		VirtualRaceTrack();
 		virtual ~VirtualRaceTrack();
-		virtual int getLevel();
-		void setLevel(int l);
+		virtual double getScore();
+
+	protected:
+
+		void setScore(double s);
 
 	private:
 
 		// still working out this
-		int level;
+		double score;
+		double length;
+		int turns;
+		double straight;
 
 };
 

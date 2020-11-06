@@ -8,10 +8,10 @@ VirtualRaceTrack::~VirtualRaceTrack(){
 
 }
 
-int VirtualRaceTrack::getLevel(){
-	return level;
+double VirtualRaceTrack::getScore(){
+	return score;
 }
 
-void VirtualRaceTrack::setLevel(int l){
-	level = l;
+void VirtualRaceTrack::setScore(double s){
+	score = s;
 }

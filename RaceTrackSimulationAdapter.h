@@ -12,7 +12,7 @@ class RaceTrackSimulationAdapter : public VirtualRaceTrack
 		~RaceTrackSimulationAdapter();
 		void setRaceTrack(RaceTrack* t);
 		RaceTrack* getRaceTrack();
-		int getLevel();
+		double getScore();
 
 	private:
 
