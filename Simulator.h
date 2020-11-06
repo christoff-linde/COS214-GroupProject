@@ -10,9 +10,10 @@ class Simulator
 		virtual ~Simulator();
 		void runSimulator();
 		virtual void simulate() = 0;
-		void setResult(double result);
 		double getResult();
 
+	protected:
+		void setResult(double result);
 
 	private:
 

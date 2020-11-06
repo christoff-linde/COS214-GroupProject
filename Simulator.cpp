@@ -1,7 +1,11 @@
 #include "Simulator.h"
+#include <iostream>
+
+using namespace std;
 
 Simulator::Simulator(){
 	result = 0;
+	cout << "New simulator created" << endl;
 }
 
 Simulator::~Simulator(){
@@ -9,8 +13,9 @@ Simulator::~Simulator(){
 }
 
 void Simulator::runSimulator(){
-	result = 0;
+	cout << "Running simulation..." << endl;
 	simulate();
+	cout << "Simulation complete. " << endl;
 }
 
 void Simulator::setResult(double result){
