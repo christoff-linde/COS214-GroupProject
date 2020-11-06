@@ -15,3 +15,11 @@ int VirtualCarPart::getLevel(){
 void VirtualCarPart::setLevel(int l){
 	level = l;
 }
+
+void VirtualCarPart::setName(string n){
+	this->name = n;
+}
+
+string VirtualCarPart::getName(){
+	return name;
+}
