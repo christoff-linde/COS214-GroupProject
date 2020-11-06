@@ -20,5 +20,5 @@ ToolingEquipment::~ToolingEquipment() {}
 
 void ToolingEquipment::print()
 {
-    std::cout << "Type: " << this->type << "\tName: " << this->name << std::endl;
+    std::cout << "\tType: " << this->type << "\tName: " << this->name << std::endl;
 }
