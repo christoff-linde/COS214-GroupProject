@@ -1,6 +1,6 @@
 # COS214-GroupProject
 
-[Report]https://docs.google.com/document/d/10xRMw7jx-v39a0AKoW1tJiqRDaTlT49Ts2XGdcrZ1Ig/edit?usp=sharing
+[Report](https://docs.google.com/document/d/10xRMw7jx-v39a0AKoW1tJiqRDaTlT49Ts2XGdcrZ1Ig/edit?usp=sharing)
 
 ## Group Members:
 | Name | Student Number | Section |
