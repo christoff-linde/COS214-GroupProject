@@ -1,7 +1,7 @@
 /**
  * @file Aircraft.cpp
  * @author Christoff Linde
- * @brief Implementation of Aircraft
+ * @brief ConcreteProduct participant. Specific type of Transport
  * @version 0.1
  * @date 2020-11-05
  *
@@ -13,7 +13,5 @@
 
 Aircraft::Aircraft()
 {
-    type = "Aircraft";
+    name = "Aircraft";
 }
-
-Aircraft::~Aircraft() {}

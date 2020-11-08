@@ -10,10 +10,3 @@
  */
 
 #include "TransportCreator.h"
-
-TransportCreator::TransportCreator() {
-}
-
-Transport* TransportCreator::createTransport() {
-    throw "Not yet implemented";
-}
