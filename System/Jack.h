@@ -14,17 +14,13 @@
 #if !defined(JACK_H)
 #define JACK_H
 
-class Jack
+class Jack : public ToolingEquipment
 {
 public:
     /**
      * @brief Construct a new Jack object
-     *
      */
     Jack();
-
-private:
-    std::string name;
 };
 
 #endif // JACK_H

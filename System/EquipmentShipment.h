@@ -12,14 +12,15 @@
 #if !defined(EQUIPMENTSHIPMENT_H)
 #define EQUIPMENTSHIPMENT_H
 
+#include "Container.h"
+
 class EquipmentShipment
 {
 public:
     /**
      * @brief Construct a new Equipment Shipment object
-     *
      */
-    EquipmentShipment();
+    EquipmentShipment(Container* _cargo);
 };
 
 #endif // EQUIPMENTSHIPMENT_H

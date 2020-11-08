@@ -47,8 +47,6 @@ public:
 
 protected:
     Race* destination; /** a pointer to a Race serving as the destination of the Shipment */
-
-private:
     Transport* methodOfTransport; /** a pointer to a Transport serving as the method of transport of the Shipment */
 };
 

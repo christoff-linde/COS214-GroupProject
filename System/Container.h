@@ -1,7 +1,7 @@
 /**
  * @file Container.h
  * @author Christoff Linde
- * @brief
+ * @brief Abstract Interface for a Container
  * @version 0.1
  * @date 2020-10-31
  *
@@ -10,7 +10,6 @@
  */
 
 #include <vector>
-#include "Equipment.h"
 
 #if !defined(CONTAINER_H)
 #define CONTAINER_H
@@ -18,31 +17,15 @@
 class Container
 {
 public:
-    Container(/* args */);
-    ~Container();
     /**
-     * @brief adds Equipment to the inventory vector
-     *
-     * @param _equipment is the Equipment to be added
+     * @brief pure virtual method to print contents of inventory
      */
-    void addToInventory(Equipment* _equipment);
+    virtual void checkInventory() = 0;
 
     /**
-     * @brief clears all Equipment from the inventory vector
-     *
+     * @brief pure virtual method to clear contents of inventory
      */
-    void clearInventory();
-
-    /**
-     * @brief checks if all needed Equipment is present in inventory
-     *
-     * @return true if all needed Equipment is present
-     * @return false if Equipmet is missing
-     */
-    bool checkInventory();
-
-private:
-    std::vector<Equipment*> inventory; /*!< vector containing Equipment needed for the Shipment */
+    virtual void clearInventory() = 0;
 };
 
 

@@ -9,6 +9,7 @@
  *
  */
 
+#include <iostream>
 #include <string>
 
 #if !defined(EQUIPMENT_H)

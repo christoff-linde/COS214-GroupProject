@@ -15,3 +15,10 @@ GarageEquipment::GarageEquipment()
 {
     this->type = "GarageEquipment";
 }
+
+GarageEquipment::~GarageEquipment() {}
+
+void GarageEquipment::print()
+{
+    std::cout << "\tType: " << this->type << "\tName: " << this->name << std::endl;
+}
