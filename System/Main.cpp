@@ -1,47 +1,29 @@
+#include "Aggressive.h"
+#include "LaidBack.h"
+#include "Neutral.h"
 #include <iostream>
-#include "EquipmentContainer.h"
 
-#include "Monitor.h"
-#include "Radio.h"
-#include "FuelTanks.h"
-#include "Wrench.h"
-#include "Jack.h"
-#include "TyreWarmer.h"
-#include "Refrigerator.h"
-#include "WaterTanks.h"
-#include "FoodCrate.h"
+using namespace std;
 
-int main(int argc, char const* argv[])
+int main()
 {
-    Monitor* monitor = new Monitor();
-    Radio* radio = new Radio();
-    FuelTanks* fuelTanks = new FuelTanks();
+    RacingStrategy* strat1 = new Aggressive();
+    cout<<"The first strategy type is: "<<strat1->getType()<<endl;
 
-    // ToolingEquipment
-    Wrench* wrench = new Wrench();
-    Jack* jack = new Jack();
-    TyreWarmer* tyreWarmer = new TyreWarmer();
+    RacingStrategy* strat2 = new Neutral();
+    cout<<"The second strategy type is: "<<strat2->getType()<<endl;
 
-    // CateringEquipment
-    Refrigerator* fridge = new Refrigerator();
-    WaterTanks* tanks = new WaterTanks();
-    FoodCrate* foodCrate = new FoodCrate();
+    RacingStrategy* strat3 = new LaidBack();
+    cout<<"The third strategy type is: "<<strat3->getType()<<endl;
 
-    EquipmentContainer* equipC = new EquipmentContainer();
+    delete strat1;
+    strat1 = nullptr;
 
-    equipC->addToInventory(monitor);
-    equipC->addToInventory(radio);
-    equipC->addToInventory(fuelTanks);
-    equipC->addToInventory(wrench);
-    equipC->addToInventory(jack);
-    equipC->addToInventory(tyreWarmer);
-    equipC->addToInventory(fridge);
-    equipC->addToInventory(tanks);
-    equipC->addToInventory(foodCrate);
+    delete strat2;
+    strat2 = nullptr;
 
-    equipC->checkInventory();
-    equipC->clearInventory();
-    equipC->checkInventory();
+    delete strat3;
+    strat3 = nullptr;
 
     return 0;
 }
