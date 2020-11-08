@@ -26,3 +26,8 @@ string LaidBack::getType()
 {
     return "LaidBack";
 }
+
+string LaidBack::getTyreType()
+{
+    return "Soft";
+}
