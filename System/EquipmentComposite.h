@@ -1,8 +1,8 @@
 /**
  * @file EquipmentComposite.h
  * @author Christoff Linde
- * @brief Composite Participant. EquipmentComposite is composed of Equipment Components. EquipmentComposite also serves as an Abstract Creator that creates different types of equipment
- * @version 0.1
+ * @brief Composite Participant. EquipmentComposite is composed of Equipment Components.
+ * @version 0.2
  * @date 2020-11-08
  *
  * @copyright Copyright (c) 2020
@@ -19,19 +19,32 @@ class EquipmentComposite
 {
 public:
     /**
-     * @brief virtual method to create and return Equipment
+     * @brief Construct a new Equipment Composite object
      *
-     * @return Equipment* pointer to the created Equipment ConcreteProduct
      */
-    virtual Equipment* add() = 0;
+    EquipmentComposite();
 
     /**
-     * @brief virtual method to print out the contents of the inventory vector
+     * @brief Destroy the Equipment Composite object
+     *
      */
-    virtual void listInventory() = 0;
+    ~EquipmentComposite();
+
+    /**
+     * @brief adds Equipment to the inventory vector
+     *
+     * @param _equipment pointer to the Equipment to be added
+     */
+    void add(Equipment* _equipment);
+
+    /**
+     * @brief call the print() method for all Equipmet in the inventory
+     *
+     */
+    void listInventory();
 
 private:
-    std::vector<Equipment*> inventory; /** vector holding Equipment* */
+    std::vector<Equipment*> inventory;
 };
 
 #endif // EQUIPMENTCOMPOSITE_H
