@@ -18,35 +18,28 @@
 class EquipmentContainer : public Container
 {
 public:
-    /**
-     * @brief Construct a new Equipment Container object
-     */
-    EquipmentContainer();
+  /**
+   * @brief Construct a new Equipment Container object
+   *
+   */
+  EquipmentContainer();
 
-    /**
-     * @brief Destroy the Equipment Container object
-     */
-    ~EquipmentContainer();
+  /**
+   * @brief Destroy the Equipment Container object
+   *
+   */
+  ~EquipmentContainer();
 
-    /**
-      * @brief print contents of inventory vector
-      */
-    void checkInventory();
-
-    /**
-     * @brief clear contents of inventory vector
-     */
-    void clearInventory();
-
-    /**
-     * @brief add EquipmentComposite to the inventory vector
-     *
-     * @param _equipment pointer to the EquipmentComposite to be added
-     */
-    void addToInventory(EquipmentComposite* _equipment);
+  /**
+   * @brief virtual method to populate the inventory of the derived containers
+   *
+   * @example EquipmentContainer
+   *
+   */
+  void createInventory();
 
 private:
-    std::vector<EquipmentComposite*> inventory; /** vector containing the EquipmentComposite* in the Container*/
+  EquipmentComposite* inventory;
 };
 
 #endif // EQUIPMENTCONTAINER_H
