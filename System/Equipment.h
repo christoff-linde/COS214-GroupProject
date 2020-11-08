@@ -23,6 +23,10 @@ public:
    *
    */
   virtual void print() = 0;
+
+protected:
+  std::string type; /** holds the type of Equipment (e.g. GarageEquipment) */
+  std::string name; /** holds the name of the Equipment (e.g. Monitor) */
 };
 
 #endif // EQUIPMENT_H

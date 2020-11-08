@@ -9,9 +9,34 @@
  *
  */
 
+#if !defined(LOGISTICSTEAM_H)
+#define LOGISTICSTEAM_H
+
 #include "Subscriber.h"
+#include "Shipment.h"
+#include <vector>
 
 class LogisticsTeam : public Subscriber
 {
-    Shipment* shipment;
+public:
+    /**
+     * @brief Construct a new Logistics Team object
+     */
+    LogisticsTeam();
+
+    /**
+     * @brief Destroy the Logistics Team object
+     */
+    ~LogisticsTeam();
+
+    /**
+     * @brief update method from Subscriber
+     * 
+     */
+    void update();
+
+private:
+    std::vector<Shipment*> shipmentList; /** holds Shipment* to shipments that the LogisticsTeam has already scheduled/prepared */
 };
+
+#endif // LOGISTICSTEAM_H
