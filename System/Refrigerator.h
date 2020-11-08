@@ -1,7 +1,7 @@
 /**
  * @file Refrigerator.h
  * @author Christoff Linde
- * @brief
+ * @brief Specific type of CateringEquipment
  * @version 0.1
  * @date 2020-10-31
  *
