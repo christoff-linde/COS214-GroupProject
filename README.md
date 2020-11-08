@@ -1,7 +1,7 @@
-# COS214-GroupProject
+# COS214-GroupProject {#mainpage}
 
 ## Project Report (Google Docs)
-[Report](https://docs.google.com/document/d/10xRMw7jx-v39a0AKoW1tJiqRDaTlT49Ts2XGdcrZ1Ig/edit?usp=sharing)
+A digital copy of the included PDF [report](https://docs.google.com/document/d/10xRMw7jx-v39a0AKoW1tJiqRDaTlT49Ts2XGdcrZ1Ig/edit?usp=sharing) is available on Google Docs
 
 ## Group Members:
 | Name | Student Number | Section |
