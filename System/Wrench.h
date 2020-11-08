@@ -19,12 +19,8 @@ class Wrench : public ToolingEquipment
 public:
     /**
      * @brief Construct a new Wrench object
-     *
      */
     Wrench();
-
-private:
-    std::string name;
 };
 
 #endif // WRENCH_H

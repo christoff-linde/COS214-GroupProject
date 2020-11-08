@@ -18,7 +18,24 @@
 class ToolingEquipment : public Equipment
 {
 public:
+    /**
+     * @brief Construct a new Tooling Equipment object
+     */
     ToolingEquipment();
+
+    /**
+     * @brief Destroy the Tooling Equipment object
+     */
+    ~ToolingEquipment();
+
+    /**
+    * @brief virtual method to be used to print the type and name of derived Equipment objects
+    */
+    void print();
+
+protected:
+    std::string type; /** holds the type of Equipment (e.g. GarageEquipment) */
+    std::string name; /** holds the name of the Equipment (e.g. Monitor) */
 };
 
 
