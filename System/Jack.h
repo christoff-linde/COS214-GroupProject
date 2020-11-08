@@ -1,7 +1,7 @@
 /**
  * @file Jack.h
  * @author Christoff Linde
- * @brief
+ * @brief Specific type of ToolEquipment
  * @version 0.1
  * @date 2020-10-31
  *
