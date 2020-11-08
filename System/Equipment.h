@@ -19,10 +19,10 @@ class Equipment
 {
 public:
   /**
-   * @brief virtual method to be used to print the type and name of derived Equipment objects
+   * @brief method to be used to print the type and name of derived Equipment objects
    *
    */
-  virtual void print() = 0;
+  void print();
 
 protected:
   std::string type; /** holds the type of Equipment (e.g. GarageEquipment) */

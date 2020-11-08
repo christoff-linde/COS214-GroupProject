@@ -9,12 +9,12 @@
  * 
  */
 
-#include "ToolingEquipment.h"
+#include "ToolEquipment.h"
 
 #if !defined(DRILL_H)
 #define DRILL_H
 
-class Drill : public ToolingEquipment
+class Drill : public ToolEquipment
 {
 public:
     /**
