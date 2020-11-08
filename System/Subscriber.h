@@ -15,7 +15,7 @@
 class Subscriber
 {
 public:
-    void update();
+    virtual void update() = 0;
 };
 
 #endif // SUBSCRIBER
