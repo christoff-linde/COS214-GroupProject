@@ -3,10 +3,7 @@ using namespace std;
 #include <string>
 CsSimulation::CsSimulation(){
 
-
-
 }
-
 CsSimulation::~CsSimulation(){
 
 }

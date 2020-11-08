@@ -1,6 +1,20 @@
 using namespace std;
-#include "WindTunnel.h"
+#include "Components.h"
 
-WindTunnel::WindTunnel(){
+Components::Components(){
+
+}
+Components::~Components(){
+
+}
+int Components::change(){
+
+
+}
+void Components::doTest(){
+
+}
+
+void Components::setState(Testing* state){
 
 }

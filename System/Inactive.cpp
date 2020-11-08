@@ -4,13 +4,13 @@ using namespace std;
 Inactive::Inactive(){
 
 
-
 }
-
 Inactive::~Inactive(){
+
 
 }
 void Inactive::handleChange(Components* c){
+
 
 }
 void Inactive::doTest(){
