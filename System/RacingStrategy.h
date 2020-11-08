@@ -36,6 +36,13 @@ class RacingStrategy
          * @return string 
          */
         virtual string getType() = 0;
+
+        /**
+         * @brief Get the Tyre Type object
+         * 
+         * @return string 
+         */
+        virtual string getTyreType() = 0;
 };
 
 #endif

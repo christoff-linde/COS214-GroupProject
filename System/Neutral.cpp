@@ -26,3 +26,8 @@ string Neutral::getType()
 {
     return "Neutral";
 }
+
+string Neutral::getTyreType()
+{
+    return "Medium";
+}

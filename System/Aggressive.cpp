@@ -26,3 +26,8 @@ string Aggressive::getType()
 {
     return "Aggressive";
 }
+
+string Aggressive::getTyreType()
+{
+    return "Hard";
+}
