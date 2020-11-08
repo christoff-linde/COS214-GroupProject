@@ -1,8 +1,8 @@
 /**
  * @file Transport.h
  * @author Christoff Linde
- * @brief Abstract Interface for the method of Transport used by a Shipment
- * @version 0.1
+ * @brief Abstract Interface for the Factory Method for Transport used by a Shipment
+ * @version 0.2
  * @date 2020-11-05
  *
  * @copyright Copyright (c) 2020
@@ -17,7 +17,7 @@
 class Transport
 {
 protected:
-    std::string type; /** Specifies the type of Transport */
+    std::string name; /** Specifies the name of Transport */
 };
 
 #endif // TRANSPORT_H

@@ -1,16 +1,19 @@
 /**
  * @file EquipmentContainer.h
  * @author Christoff Linde
- * @brief Container for Equipment derived from Container
- * @version 0.1
+ * @brief Container for EquipmentComposite derived from Container
+ * @version 0.2
  * @date 2020-11-06
  *
  * @copyright Copyright (c) 2020
  *
  */
 
+#if !defined(EQUIPMENTCONTAINER_H)
+#define EQUIPMENTCONTAINER_H
+
 #include "Container.h"
-#include "Equipment.h"
+#include "EquipmentComposite.h"
 
 class EquipmentContainer : public Container
 {
@@ -25,9 +28,9 @@ public:
      */
     ~EquipmentContainer();
 
-   /**
-     * @brief print contents of inventory vector
-     */
+    /**
+      * @brief print contents of inventory vector
+      */
     void checkInventory();
 
     /**
@@ -36,12 +39,14 @@ public:
     void clearInventory();
 
     /**
-     * @brief add Equipment to the inventory vector
-     * 
-     * @param _equipment pointer to the Equipment to be added
+     * @brief add EquipmentComposite to the inventory vector
+     *
+     * @param _equipment pointer to the EquipmentComposite to be added
      */
-    void addToInventory(Equipment* _equipment);
+    void addToInventory(EquipmentComposite* _equipment);
 
 private:
-    std::vector<Equipment*> inventory; /** vector containing the Equipment in the Container*/
+    std::vector<EquipmentComposite*> inventory; /** vector containing the EquipmentComposite* in the Container*/
 };
+
+#endif // EQUIPMENTCONTAINER_H
