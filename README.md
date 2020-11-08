@@ -9,7 +9,7 @@ A digital copy of the included PDF [report](https://docs.google.com/document/d/1
 | Christoff Linde | 18163841 | Logistics |
 | Werner Graaff | 18050362 | Engineering |
 | Campbell Gardiner | 17265322 | Testing |
-| Daelin | 14016673 | Simulators |
+| Daelin Campleman | 14016673 | Simulators |
 | Kyle Proctor-Parker	| 18119396 | Racing Strategy |
 | Christoff Botha | 18080652 | Racing |
 
