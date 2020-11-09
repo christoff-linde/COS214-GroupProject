@@ -11,30 +11,53 @@
 
 #include "EquipmentContainer.h"
 
+#include "Drill.h"
+#include "Jack.h"
+#include "Wrench.h"
+
+#include "FoodCrate.h"
+#include "Refrigerator.h"
+#include "WaterTank.h"
+
+#include "Computer.h"
+#include "FuelTank.h"
+#include "Radio.h"
+
 EquipmentContainer::EquipmentContainer()
-{}
+{
+    this->inventory = new EquipmentComposite();
+}
 
 EquipmentContainer::~EquipmentContainer()
-{}
-
-void EquipmentContainer::checkInventory()
 {
-    if (this->inventory.empty())
-        std::cout << "Inventory Empty" << std::endl;
-    else
-    {
-        std::cout << "EquipmentContainer Inventory:" << std::endl;
-        for (auto&& equipment : inventory)
-            equipment->print();
-    }
+    delete inventory;
+    this->inventory = nullptr;
 }
 
-void EquipmentContainer::clearInventory()
+void EquipmentContainer::createInventory()
 {
-    this->inventory.clear();
-}
+    // ToolEquipment
+    Drill* drill = new Drill();
+    inventory->add(drill);
+    Jack* jack = new Jack();
+    inventory->add(jack);
+    Wrench* wrench = new Wrench();
+    inventory->add(wrench);
 
-void EquipmentContainer::addToInventory(Equipment* _equipment)
-{
-    this->inventory.push_back(_equipment);
+    // CateringEquipment
+    FoodCrate* foodCrate = new FoodCrate();
+    inventory->add(foodCrate);
+    Refrigerator* refrigerator = new Refrigerator();
+    inventory->add(refrigerator);
+    WaterTank* waterTank = new WaterTank();
+    inventory->add(waterTank);
+
+    // GarageEquipment
+    Computer* computer = new Computer();
+    inventory->add(computer);
+    FuelTank* fuelTank = new FuelTank();
+    inventory->add(fuelTank);
+    Radio* radio = new Radio();
+    inventory->add(radio);
+
 }

@@ -1,16 +1,19 @@
 /**
  * @file Shipment.h
  * @author Christoff Linde
- * @brief Abstract class for Shipments
- * @version 0.1
+ * @brief Shipment for a race, contains Containers as cargo and charteredFlight for the RaceCar
+ * @version 0.2
  * @date 2020-10-31
  *
  * @copyright Copyright (c) 2020
  *
  */
 
-#include "Race.h"
-#include "Transport.h"
+#include <vector>
+#include "Container.h"
+#include "CarPart.h"
+#include "RaceCar.h"
+#include "CharteredFlight.h"
 
 #if !defined(SHIPMENT_H)
 #define SHIPMENT_H
@@ -19,35 +22,28 @@ class Shipment
 {
 public:
     /**
-     * @brief Set the Method Of Transport object
-     * @param _method pointer to a Transport object
+     * @brief Construct a new Shipment object
      */
-    virtual void setMethodOfTransport(Transport* _method) = 0;
+    Shipment();
 
     /**
-     * @brief Get the Method Of Transport object
-     *
-     * @return Transport* pointer to the private methodOfTransport attribute
+     * @brief Destroy the Shipment object and other allocated memory
+     * 
      */
-    virtual Transport* getMethodOfTransport() = 0;
+    ~Shipment();
 
     /**
-     * @brief Set the Destination object
-     *
-     * @param _race pointer to a Race object
+     * @brief 
+     * 
+     * @param _race 
+     * @param _carPartList 
+     * @param _raceCar 
      */
-    virtual void setDestination(Race* _race) = 0;
+    void prepareShipment(Race* _race, std::list<CarPart*> _carPartList, RaceCar* _raceCar);
 
-    /**
-     * @brief Get the Destination object
-     *
-     * @return Race* pointer to the protected destination attribute
-     */
-    virtual Race* getDestination() = 0;
-
-protected:
-    Race* destination; /** a pointer to a Race serving as the destination of the Shipment */
-    Transport* methodOfTransport; /** a pointer to a Transport serving as the method of transport of the Shipment */
+private:
+    std::vector<Container*> cargo; /** holds Container* to the Containers that is part of the Shipment cargo */
+    CharteredFlight* charteredFlight; /** holds a pointer to a CharteredFlight for the RaceCar */
 };
 
 #endif // SHIPMENT_H

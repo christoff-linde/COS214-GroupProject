@@ -1,8 +1,8 @@
 /**
  * @file CateringEquipment.cpp
  * @author Christoff Linde
- * @brief Implementation for CateringEquipment
- * @version 0.1
+ * @brief Sub-category of Equipment
+ * @version 0.2
  * @date 2020-11-05
  *
  * @copyright Copyright (c) 2020
@@ -14,11 +14,4 @@
 CateringEquipment::CateringEquipment()
 {
     this->type = "CateringEquipment";
-}
-
-CateringEquipment::~CateringEquipment() {}
-
-void CateringEquipment::print()
-{
-    std::cout << "\tType: " << this->type << "\tName: " << this->name << std::endl;
 }
