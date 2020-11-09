@@ -30,7 +30,7 @@ public:
     vector<Team*> getPositions();
 private:
     void nextRace();
-    raceState state;
+    RaceState* state;
     string location;
     vector<Team*> teams;
     string date;
