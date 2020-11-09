@@ -1,29 +1,49 @@
 #include "RaceCar.h"
 
- RaceCar::RaceCar(list <CarPart*> partsList)
+ RaceCar::RaceCar(vector <CarPart*> partsList)
  {
-     //iterate through parts and assign them to parts variables
-     list <CarPart*> :: iterator it;
+    
+     vector <CarPart*> :: iterator it;
      for(it = partsList.begin(); it != partsList.end(); ++it)
      {
-         if((*it)->getName().find("Engine") != string::npos)//meaning part name contains engine
+         if((*it)->getName().find("Engine") != string::npos)
          {
-            EngineProduct carEngine = (*it);//problem is that it is of type carPart
+            this->carEngine = dynamic_cast<EngineProduct*>(*it);
          }
-         else if((*it)->getName().find("Chassis") != string::npos)//meaning part name contains chassis
+         else if((*it)->getName().find("Chassis") != string::npos)
          {
-            this->carChassis = (ChassisProduct)*it;//problem is that it is of type carPart
+            this->carChassis = dynamic_cast<ChassisProduct*>(*it);
          }
          else if((*it)->getName().find("Electronics") != string::npos)
          {
-             //assing pointers to these objects
+            this->carElectronics = dynamic_cast<ElectronicsProduct*>(*it); 
          }
          else if((*it)->getName().find("Aerodynamics") != string::npos)
          {
-             //assing pointers to these objects
+            this->carAerodynamics = dynamic_cast<AerodynamicsProduct*>(*it);
          }
      }
  }
+
+EngineProduct* RaceCar::getEngine()
+{
+   return this->carEngine;
+}
+
+ChassisProduct* RaceCar::getChassis()
+{
+   return this->carChassis;
+}
+
+AerodynamicsProduct* RaceCar::getAerodynamics()
+{
+   return this->carAerodynamics;
+}
+
+ElectronicsProduct* RaceCar::getElectronics()
+{
+   return this->carElectronics;
+}
 
  RaceCar::RaceCar()
  {
