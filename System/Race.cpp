@@ -97,3 +97,8 @@ void Race::runRaces(){
     delete practice;
     delete raceWeekend;
 }
+
+bool Race::getIsLocal()
+{
+    return isLocal;
+}

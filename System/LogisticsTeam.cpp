@@ -21,5 +21,8 @@ LogisticsTeam::~LogisticsTeam()
     shipmentList.clear();
 }
 
-void LogisticsTeam::update()
-{}
+void LogisticsTeam::update(std::vector<CarPart*> _carPartsList, RaceCar* _raceCar, Race* _race)
+{
+    Shipment* shipment = new Shipment();
+    shipment->prepareShipment(_carPartsList, _raceCar, _race);
+}

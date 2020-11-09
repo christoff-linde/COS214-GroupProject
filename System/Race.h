@@ -26,25 +26,21 @@
 
 class Race
 {
-    public:
-        Race(string location, string date);
-        ~Race();
-        void runRaces();
-        string getLocation();
-        string getDate();
-        void RegisterTeam(Team* team);
-        vector<Team*> getTeams();
-        vector<Team*> getPositions();
-        void setPositions(vector<Team*>);
-        int getPoints(Team* team);
-        RaceTrack* getTrack();
-        void setTrack(RaceTrack*);
-    private:
-        string location;
-        vector<Team*> teams;
-        string date;
-        RaceTrack* track;
-        vector<Team*> positions;
+public:
+    Race(string location, string date);
+    ~Race();
+    void runRace();
+    string getLocation();
+    string getDate();
+    void RegisterTeam(Team* team);
+    vector<Team*> getTeams();
+    vector<Team*> getPositions();
+private:
+    void nextRace();
+    raceState state;
+    string location;
+    vector<Team*> teams;
+    string date;
 };
 
 #endif 

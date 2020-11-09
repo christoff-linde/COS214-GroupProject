@@ -10,6 +10,8 @@
  */
 
 #include "Shipment.h"
+#include "TruckCreator.h"
+#include "ShipCreator.h"
 
 Shipment::Shipment()
 {
@@ -24,7 +26,33 @@ Shipment::~Shipment()
     this->cargo.clear();
 }
 
-void Shipment::prepareShipment(Race* _race, std::list<CarPart*> _carPartList, RaceCar* _raceCar)
+void Shipment::prepareShipment(std::vector<CarPart*> _carPartsList, RaceCar* _raceCar, Race* _race)
 {
+    // Create Transport
+    TransportCreator* transportCreator;
 
+    if (_race->getIsLocal())
+        transportCreator = new TruckCreator();
+    else
+        transportCreator = new ShipCreator();
+
+    Transport* transportMethod = transportCreator->createTransport();
+
+    // Create EquipmentContainer
+    Container* equipmentContainer = new EquipmentContainer();
+    equipmentContainer->createInventory();
+    equipmentContainer->setModeOfTransport(transportMethod);
+
+    // Create CarPartContainer
+    Container* carPartContainer = new CarPartContainer();
+    carPartContainer->createInventory();
+    dynamic_cast<CarPartContainer*>(carPartContainer)->addToInventory(_carPartsList);
+
+    this->cargo.push_back(equipmentContainer);
+    this->cargo.push_back(carPartContainer);
+
+    this->charteredFlight = new CharteredFlight(_raceCar);
+
+    delete transportCreator;
+    transportCreator = nullptr;
 }
