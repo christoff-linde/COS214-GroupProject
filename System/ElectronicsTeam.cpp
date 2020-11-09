@@ -13,7 +13,7 @@ CarPart* ElectronicsTeam::createCarPart()
     //call pointer to strategy to get Electronics specs
     if(this->getStrategy()->getType() == "Aggressive")
     {
-        CarPart* electronics = new ElectronicsProduct("Agressive Electronics", 100,200, 560, 1800, 100);
+        CarPart* electronics = new ElectronicsProduct("Aggressive Electronics", 100,200, 560, 1800, 100);
         return electronics; 
     }
     else if(this->getStrategy()->getType() == "Laid Back")

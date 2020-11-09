@@ -12,7 +12,7 @@ CarPart* AerodynamicsTeam::createCarPart()
 {
    if(this->getStrategy()->getType() == "Aggressive")
     {
-        CarPart* aerodynamics = new AerodynamicsProduct("Agressive Aerodynamics", 100, 1.30, 2000, 950, 4500);
+        CarPart* aerodynamics = new AerodynamicsProduct("Aggressive Aerodynamics", 100, 1.30, 2000, 950, 4500);
         return aerodynamics; 
     }
     else if(this->getStrategy()->getType() == "Laid Back")

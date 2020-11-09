@@ -13,7 +13,7 @@ CarPart* EngineTeam::createCarPart()
 {
     if(this->getStrategy()->getType() == "Aggressive")
     {
-        CarPart* engine = new EngineProduct("Agressive Engine", 100, 1200, 18.0, 2.5,  800);//maybe set base material
+        CarPart* engine = new EngineProduct("Aggressive Engine", 100, 1200, 18.0, 2.5,  800);//maybe set base material
         return engine; //hopefully works
     }
     else if(this->getStrategy()->getType() == "Laid Back")

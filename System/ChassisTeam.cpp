@@ -12,7 +12,7 @@ CarPart* ChassisTeam::createCarPart()
 {
     if(this->getStrategy()->getType() == "Aggressive")
     {
-        CarPart* chassis = new ChassisProduct("Agressive Chassis", 100, 700, 0.31 , 800 , 800);
+        CarPart* chassis = new ChassisProduct("Aggressive Chassis", 100, 700, 0.31 , 800 , 800);
         return chassis;
     }
     else if(this->getStrategy()->getType() == "Laid Back")
