@@ -11,6 +11,9 @@
 #ifndef SIMULATOR_H
 #define SIMULATOR_H
 
+#include "VirtualRaceCar.h"
+#include "VirtualCarPart.h"
+
 class Simulator
 {
 
@@ -41,6 +44,13 @@ class Simulator
          * @return double 
          */
 		double getResult();
+      /**
+         * @brief Set the subject
+         * 
+         * @param subject
+         */
+      virtual void setSubject(VirtualRaceCar* subject);
+      virtual void setSubject(VirtualCarPart* subject);
 
 	protected:
 		/**
