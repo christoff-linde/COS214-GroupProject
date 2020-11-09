@@ -5,7 +5,7 @@ using namespace std;
 #include "CarPartSimulator.h"
 #include "VirtualCarPart.h"
 #include "ChassisSimulationAdapter.h"
-#include "AerodynamcsSimulationAdapter.h"
+#include "AerodynamicsSimulationAdapter.h"
 #include "EngineSimulationAdapter.h"
 #include "ElectronicsSimulationAdapter.h"
 #include "typeinfo"
