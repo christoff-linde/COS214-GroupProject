@@ -38,7 +38,7 @@ public:
 
     /**
      * @brief method to add CarParts retrieved from EngineerStore to the inventory
-     * 
+     *
      * @param _carPartList vector holding CarPart* to CarPart s
      */
     void addToInventory(std::vector<CarPart*> _carPartList);

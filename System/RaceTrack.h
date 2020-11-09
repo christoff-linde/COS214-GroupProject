@@ -8,26 +8,28 @@
  * @copyright Copyright (c) 2020
  *
  */
- 
+
 #if !defined(RACETRACK_H)
 #define RACETRACK_H
 #include "RaceTrack.h"
+#include <vector>
 
-class RaceTrack{
-    public:
-        RaceTrack(int laps, int turns, float length, int straight);
-        int getNumLaps();
-        int getNumTurns();
-        float getTotalLength();
-        int getLongestStraight();
-        vector<Team*> getGridOrder();
-        void setGridOrder(vector<Team*>);
-    private:
-        int numLaps;
-        int turns;
-        float length;
-        int longest;
-        vector<Team*> gridOrder;
+class RaceTrack {
+public:
+    RaceTrack(int laps, int turns, float length, int straight);
+    int getNumLaps();
+    int getNumTurns();
+    float getTotalLength();
+    int getLongestStraight();
+    std::vector<Team*> getGridOrder();
+    void setGridOrder(std::vector<Team*>);
+    
+private:
+    int numLaps;
+    int turns;
+    float length;
+    int longest;
+    std::vector<Team*> gridOrder;
 };
 
 #endif

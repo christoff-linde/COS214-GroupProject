@@ -8,18 +8,21 @@
  * @copyright Copyright (c) 2020
  *
  */
-#ifndef EngineeringStore_H
-#define EngineeringStore_H
+
+class Race;
 
 #include <iostream>
 #include <cstring>
 #include <string>
 #include <vector>
 #include <iterator>
+#include "Race.h"
 #include "CarPart.h"
 #include "EngineeringTeam.h"
 #include "Subscriber.h"
-#include "Race.h"
+
+#ifndef EngineeringStore_H
+#define EngineeringStore_H
 
 using namespace std;
 
@@ -91,13 +94,6 @@ public:
    * @param _subscriber pointer to the Subscriber to be added
    */
   void subscribe(Subscriber* _subscriber);
-
-  /**
-   * @brief unsubscribes a Subscriber participant from the subscriberList of the Publisher
-   *
-   * @param _subscriber pointer to the Subscriber to be removed
-   */
-  void unsubscribe(Subscriber* _subscriber);
 
   /**
    * @brief call each the update() method for each Subscriber

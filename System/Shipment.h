@@ -9,6 +9,10 @@
  *
  */
 
+
+#if !defined(SHIPMENT_H)
+#define SHIPMENT_H
+
 #include <vector>
 #include "Container.h"
 #include "CarPart.h"
@@ -17,9 +21,6 @@
 #include "Race.h"
 #include "EquipmentContainer.h"
 #include "CarPartContainer.h"
-
-#if !defined(SHIPMENT_H)
-#define SHIPMENT_H
 
 class Shipment
 {
@@ -31,13 +32,13 @@ public:
 
     /**
      * @brief Destroy the Shipment object and other allocated memory
-     * 
+     *
      */
     ~Shipment();
 
     /**
      * @brief starts preparing the Shipment, which includes creating the correct methodOfTransport as well as the Containers
-     * 
+     *
      * @param _carPartsList vector of CarPart* to be added to the CarPartContainer
      * @param _raceCar pointer to the RaceCar that needs to be shipped
      * @param _race pointer to the Race that should receive the Shipment

@@ -8,12 +8,12 @@
  * @copyright Copyright (c) 2020
  *
  */
+#include <vector>
+#include "RaceCar.h"
+#include "Race.h"
 
 #if !defined(SUBSCRIBER)
 #define SUBSCRIBER
-
-#include <vector>
-#include "RaceCar.h"
 
 class Subscriber
 {

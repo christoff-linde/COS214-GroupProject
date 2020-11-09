@@ -9,20 +9,20 @@
  *
  */
 
-
+class Team;
+class RaceTrack;
 
 #if !defined(RACE_H)
 #define RACE_H
 
+#include <string>
+#include <vector>
 #include "Team.h"
 #include "RaceTrack.h"
 #include "RaceHandler.h"
 #include "PracticeHandler.h"
 #include "QualifyingHandler.h"
 #include "FinalHandler.h"
-
-#include <string>
-#include <vector>
 
 class Race
 {

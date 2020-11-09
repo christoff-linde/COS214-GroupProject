@@ -1,4 +1,5 @@
 #include "EngineeringStore.h"
+#include "Race.h"
 
 EngineeringStore::EngineeringStore()
 {}
@@ -17,12 +18,12 @@ void EngineeringStore::addToList(CarPart* carPart)
    this->partsList.push_back(carPart);
 }
 
-vector <CarPart*> EngineeringStore::getPartsList()
+vector<CarPart*> EngineeringStore::getPartsList()
 {
    return this->partsList;
 }
 
-vector <CarPart*> EngineeringStore::getStrategyList(string strategy)
+vector<CarPart*> EngineeringStore::getStrategyList(string strategy)
 {
    vector <CarPart*> strategyList;
    vector <CarPart*> ::iterator it;
@@ -92,15 +93,6 @@ ElectronicsProduct* EngineeringStore::getElectronics()
 void EngineeringStore::subscribe(Subscriber* _subscriber)
 {
    this->subscriberList.push_back(_subscriber);
-}
-
-void EngineeringStore::unsubscribe(Subscriber* _subscriber)
-{
-   vector<Subscriber*>::iterator index;
-   index = find(subscriberList.begin(), subscriberList.end(), _subscriber);
-
-   if (index != subscriberList.end())
-      subscriberList.erase(index);
 }
 
 void EngineeringStore::notifySubscribers(Race* _race)

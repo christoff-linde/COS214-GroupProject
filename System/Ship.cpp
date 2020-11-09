@@ -13,7 +13,7 @@
 
 Ship::Ship()
 {
-    type = "Ship";
+    name = "Ship";
 }
 
 Ship::~Ship() {}

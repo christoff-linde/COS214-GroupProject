@@ -11,7 +11,7 @@
 
 #include "Wrench.h"
 
-Wrench::Wrench() : ToolingEquipment()
+Wrench::Wrench() : ToolEquipment()
 {
     this->name = "Wrench";
 }

@@ -19,6 +19,8 @@
 #include "RacingStrategy.h"
 #include "Race.h"
 
+class EngineeringStore;
+
 class Team
 {
 public:

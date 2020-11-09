@@ -9,12 +9,19 @@
  *
  */
 
+class Race;
+class EngineeringStore;
+class Shipment;
+
 #if !defined(LOGISTICSTEAM_H)
 #define LOGISTICSTEAM_H
 
 #include <vector>
 #include "Subscriber.h"
 #include "Shipment.h"
+#include "Race.h"
+#include "RaceCar.h"
+#include "CarPart.h"
 
 class LogisticsTeam : public Subscriber
 {
