@@ -15,6 +15,7 @@ Team::Team()
 {
     this->engineeringTeam = nullptr;
     this->logisticsTeam = nullptr;
+    this->engineeringStore = nullptr;
 }
 
 Team::~Team()
@@ -26,11 +27,13 @@ Team::~Team()
     engineeringTeam = nullptr;
     delete logisticsTeam;
     logisticsTeam = nullptr;
+    delete engineeringStore;
+    engineeringStore = nullptr;
 }
 
 void Team::scheduleRace(Race* _race, RacingStrategy* _racingStrategy)
 {
-    this->engineeringTeam->notifySubscribers();
+    this->engineeringStore->notifySubscribers(_race);
 }
 
 std::string Team::getTeamName()
@@ -51,4 +54,9 @@ void Team::assignEngineeringTeam(EngineeringTeam* _engineeringTeam)
 void Team::assignLogisticsTeam(LogisticsTeam* _logisticsTeam)
 {
     this->logisticsTeam = _logisticsTeam;
+}
+
+void Team::assignEngineeringStore(EngineeringStore* _engineeringStore)
+{
+    this->engineeringStore = _engineeringStore;
 }

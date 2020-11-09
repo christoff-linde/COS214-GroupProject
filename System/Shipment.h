@@ -14,6 +14,9 @@
 #include "CarPart.h"
 #include "RaceCar.h"
 #include "CharteredFlight.h"
+#include "Race.h"
+#include "EquipmentContainer.h"
+#include "CarPartContainer.h"
 
 #if !defined(SHIPMENT_H)
 #define SHIPMENT_H
@@ -33,13 +36,13 @@ public:
     ~Shipment();
 
     /**
-     * @brief 
+     * @brief starts preparing the Shipment, which includes creating the correct methodOfTransport as well as the Containers
      * 
-     * @param _race 
-     * @param _carPartList 
-     * @param _raceCar 
+     * @param _carPartsList vector of CarPart* to be added to the CarPartContainer
+     * @param _raceCar pointer to the RaceCar that needs to be shipped
+     * @param _race pointer to the Race that should receive the Shipment
      */
-    void prepareShipment(Race* _race, std::list<CarPart*> _carPartList, RaceCar* _raceCar);
+    void prepareShipment(std::vector<CarPart*> _carPartsList, RaceCar* _raceCar, Race* _race);
 
 private:
     std::vector<Container*> cargo; /** holds Container* to the Containers that is part of the Shipment cargo */

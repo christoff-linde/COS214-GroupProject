@@ -28,12 +28,21 @@ public:
     void RegisterTeam(Team* team);
     vector<Team*> getTeams();
     vector<Team*> getPositions();
+
+    /**
+     * @brief Get the isLocal variable
+     * 
+     * @return true for EU Race
+     * @return false for NON-EU Race
+     */
+    bool getIsLocal();
 private:
     void nextRace();
     RaceState* state;
     string location;
     vector<Team*> teams;
     string date;
+    bool isLocal; /** indicates whether a Race is EU or NON-EU */
 };
 
 #endif // RACE_H

@@ -1,7 +1,7 @@
 /**
  * @file Race.cpp
  * @author Christoff Botha & Christoff Linde
- * @brief 
+ * @brief
  * @version 0.1
  * @date 2020-11-05
  *
@@ -63,4 +63,9 @@ void Race::runRace() {
 
     //Final Race 
     nextRace();
+}
+
+bool Race::getIsLocal()
+{
+    return isLocal;
 }
