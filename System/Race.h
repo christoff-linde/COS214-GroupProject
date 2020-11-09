@@ -29,18 +29,24 @@ class Race
 public:
     Race(string location, string date);
     ~Race();
-    void runRace();
+    void runRaces();
     string getLocation();
     string getDate();
-    void RegisterTeam(Team* team);
+    void RegisterTeams(std::vector<Team*> teams);
     vector<Team*> getTeams();
     vector<Team*> getPositions();
+    void setPositions(vector<Team*>);
+    int getPoints(Team* team);
+    RaceTrack* getTrack();
+    void setTrack(RaceTrack*);
+    bool getIsLocal();
 private:
-    void nextRace();
-    raceState state;
-    string location;
-    vector<Team*> teams;
-    string date;
+    std::string location;
+    std::vector<Team*> teams;
+    std::string date;
+    RaceTrack* track;
+    std::vector<Team*> positions;
+    bool isLocal;
 };
 
 #endif 

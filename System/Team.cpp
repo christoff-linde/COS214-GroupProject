@@ -11,8 +11,9 @@
 
 #include "Team.h"
 
-Team::Team()
+Team::Team(std::string _teamName)
 {
+    this->teamName = _teamName;
     this->engineeringTeam = nullptr;
     this->logisticsTeam = nullptr;
     this->engineeringStore = nullptr;

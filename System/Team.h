@@ -25,8 +25,9 @@ public:
     /**
      * @brief Construct a new Team object
      *
+     * @param _teamName name of the Team
      */
-    Team();
+    Team(std::string _teamName);
 
     /**
      * @brief Destroy the Team object
