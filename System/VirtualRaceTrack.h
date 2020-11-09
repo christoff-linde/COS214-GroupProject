@@ -9,6 +9,10 @@ class VirtualRaceTrack
 		VirtualRaceTrack();
 		virtual ~VirtualRaceTrack();
 		virtual double getScore();
+		virtual double getTotalLength();
+		virtual int getTurns();
+		virtual double getLongestStraight();
+
 
 	protected:
 
@@ -16,11 +20,10 @@ class VirtualRaceTrack
 
 	private:
 
-		// still working out this
 		double score;
 		double length;
 		int turns;
-		double straight;
+		double longestStraight;
 
 };
 

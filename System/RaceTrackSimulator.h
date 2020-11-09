@@ -11,10 +11,11 @@ class RaceTrackSimulator : public Simulator
 
 		RaceTrackSimulator();
 		virtual ~RaceTrackSimulator();
-		void simulate();
 		void setSubject(VirtualRaceTrack* subject);
 		VirtualRaceTrack* getSubject();
 
+	protected:
+		void simulate();
 
 	private:
 

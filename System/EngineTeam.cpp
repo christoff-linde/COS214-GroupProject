@@ -1,8 +1,8 @@
 #include "EngineTeam.h"
 
-EngineTeam::EngineTeam()
+EngineTeam::EngineTeam(RacingStrategy* strategy)
 {
-
+    this->setRacingStrategy(strategy);
 }
 
 EngineTeam::~EngineTeam()
