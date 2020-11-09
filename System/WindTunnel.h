@@ -25,9 +25,9 @@ class WindTunnel
         WindTunnel();
         ~WindTunnel();
         void handleChange(Components* c);
-        void doTest();
+        void doTest(RaceCar* car);
+        void doTest(CarPart* part);
 		
-		 
 	
 };
  

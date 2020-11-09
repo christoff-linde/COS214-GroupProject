@@ -25,7 +25,8 @@ class CsSimulation
         CsSimulation();
         ~CsSimulation();
         void handleChange(Components* c);
-        void doTest();
+        void doTest(RaceCar* car);
+        void doTest(CarPart* part);
 		
 		 
 	

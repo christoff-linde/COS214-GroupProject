@@ -23,7 +23,8 @@ class Testing
 	public:
         Testing();
         ~Testing();
-        virtual void doTest() = 0;
+        virtual void doTest(RaceCar* car) = 0;
+        virtual void doTest(CarPart* part) = 0;
         virtual void handleChange(Components* c) =0;
 		
 		 
