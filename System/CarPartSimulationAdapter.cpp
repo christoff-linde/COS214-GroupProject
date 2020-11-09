@@ -16,7 +16,7 @@ CarPart* CarPartSimulationAdapter::getCarPart(){
 	return part;
 }
 
-int CarPartSimulationAdapter::getLevel(){
+double CarPartSimulationAdapter::getLevel(){
 	// convert CarPart electronics attributes to a value
 	// representing a VirtualRaceCar's electronicsLevel
 

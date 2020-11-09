@@ -8,23 +8,23 @@ CarSimulationAdapter::~CarSimulationAdapter(){
 
 }
 
-void CarSimulationAdaptersetCar(RaceCar* r){
+void CarSimulationAdapter::setCar(RaceCar* r){
 	this->car = r;
 }
 
-RaceCar* CarSimulationAdaptergetCar(){
+RaceCar* CarSimulationAdapter::getCar(){
 	return this->car;
 }
 
 
 double CarSimulationAdapter::getEngineLevel(){
-	double l = car->getCarEngine()->getHorsePower()/100;
+	double l = car->getEngine()->getHorsepower()/100;
 
-	l *= car->getCarEngine()->getAirChargeRatio();
+	l *= car->getEngine()->getAirChargeRatio();
 
-	l *= car->getCarEngine()->getCompressionRatio();
+	l *= car->getEngine()->getCompressionRatio();
 
-	l *= car->getCarEngine()->getHorsePower();
+	l *= car->getEngine()->getHorsepower();
 
 	return l;
 }
@@ -32,38 +32,38 @@ double CarSimulationAdapter::getEngineLevel(){
 double CarSimulationAdapter::getAerodynamicsLevel(){
 	double l = 0;
 
-	double widthCalc = 1 / (car->getCarAerodynamics()->getFrontWingWidth() - car->getCarAerodynamics()->getBackWingWidth());
+	double widthCalc = 1 / (car->getAerodynamics()->getFrontWingWidth() - car->getAerodynamics()->getBackWingWidth());
 
 	double df;
 
 	// calculate difference from optimal
-	if(car->getCarAerodynamics()->getDownForce() > 4000){
-		df = car->getCarAerodynamics()->getDownForce() - 4000;
+	if(car->getAerodynamics()->getDownForce() > 4000){
+		df = car->getAerodynamics()->getDownForce() - 4000;
 	}else{
-		df = 4000 - car->getCarAerodynamics()->getDownForce();
+		df = 4000 - car->getAerodynamics()->getDownForce();
 	}
 
 	l = widthCalc * 1/df;
 
-	l *= 1/car->getCarAerodynamics()->getCfDrag();
+	l *= 1/car->getAerodynamics()->getCFDrag();
 
 	return l;
 }
 
 double CarSimulationAdapter::getChassisLevel(){
-	double l = car->getCarChassis()->getTorque();
+	double l = car->getChassis()->getTorque();
 
-	l *= car->getCarChassis()->getPoissonRatio();
+	l *= car->getChassis()->getPoissionRatio();
 
 	return l;
 }
 
 double CarSimulationAdapter::getElectronicsLevel(){
-	double l = car->getCarElectronics()->getPowerOutput();
+	double l = car->getElectronics()->getPowerOutput();
 
-	l *= car->getCarElectronics()->getAccSpeed()/1000;
+	l *= car->getElectronics()->getAccSpeed()/1000;
 
-	l *= 1/car->getCarElectronics()->getGearChangeSpeed();
+	l *= 1/car->getElectronics()->getGearChangeSpeed();
 
 	return l;
 }

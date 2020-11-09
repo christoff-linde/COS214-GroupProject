@@ -2,6 +2,7 @@
 #define CARPARTSIMULATIONADAPTER_H
 
 #include "VirtualCarPart.h"
+#include "CarPart.h"
 
 class CarPartSimulationAdapter : public VirtualCarPart
 {
@@ -12,7 +13,7 @@ class CarPartSimulationAdapter : public VirtualCarPart
 		~CarPartSimulationAdapter();
 		void setCarPart(CarPart* p);
 		CarPart* getCarPart();
-		int getLevel();
+		double getLevel();
 
 	private:
 
