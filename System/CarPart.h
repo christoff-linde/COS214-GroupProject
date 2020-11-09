@@ -1,9 +1,9 @@
 /**
- * @file AerodynamicsTeam.h
- * @author Werner Graaff
+ * @file CarPart.h
+ * @author Werner Graaff (u18050362@tuks.co.za)
  * @brief 
  * @version 0.1
- * @date 2020-11-08
+ * @date 2020-11-09
  * 
  * @copyright Copyright (c) 2020
  * 
@@ -20,8 +20,7 @@ using namespace std;
         public:
             CarPart();
             CarPart(string name);
-            ~CarPart();
-        //    virtual CarPart* createTeam(string teamName);
+            virtual ~CarPart();
             void setName(string name);
             string getName();
             void setBaseMaterial(string baseMaterial);

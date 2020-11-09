@@ -1,9 +1,9 @@
 /**
  * @file ChassisProduct.h
- * @author Werner Graaff
+ * @author Werner Graaff (u18050362@tuks.co.za)
  * @brief 
  * @version 0.1
- * @date 2020-11-08
+ * @date 2020-11-09
  * 
  * @copyright Copyright (c) 2020
  * 
@@ -20,28 +20,13 @@ using namespace std;
     class ChassisProduct : public CarPart {
         
         public:
-            /**
-             * @brief Construct a new Chassis Product object
-             * 
-             * @param name 
-             * @param torque 
-             * @param poissonRatio 
-             * @param wheelOverhang 
-             * @param rearOverhang 
-             */
-            ChassisProduct(string name, double torque, double poissonRatio, int wheelOverhang, int rearOverhang);
-
-            /**
-             * @brief Destroy the Chassis Product object
-             * 
-             */
+            ChassisProduct(string name, int durability, double torque, double poissonRatio, int wheelOverhang, int rearOverhang);
             ~ChassisProduct();
-
-            /**
-             * @brief Construct a new Chassis Product object
-             * 
-             */
             ChassisProduct();
+            double getTorque();
+            double getPoissionRatio();
+            int getWheelOverhang();
+            int getRearOverhang();
             
         private:
             double torque;

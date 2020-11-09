@@ -1,9 +1,9 @@
 /**
  * @file AerodynamicsProduct.h
- * @author Werner Graaff
+ * @author Werner Graaff (u18050362@tuks.co.za)
  * @brief 
  * @version 0.1
- * @date 2020-11-08
+ * @date 2020-11-09
  * 
  * @copyright Copyright (c) 2020
  * 
@@ -15,36 +15,18 @@
 #include <string>
 #include "CarPart.h"
 //#include "CurrentYear.h"
-
 using namespace std;
     
-    class AerodynamicsProduct : public CarPart 
-    {
+    class AerodynamicsProduct : public CarPart {
         
         public:
-            /**
-             * @brief Construct a new Aerodynamics Product object
-             * 
-             * @param name 
-             * @param cfDrag 
-             * @param frontWingWidth 
-             * @param backWingWidth 
-             * @param downForce 
-             */
-            AerodynamicsProduct(string name, double cfDrag, int frontWingWidth, int backWingWidth, int downForce );
-
-            /**
-             * @brief Destroy the Aerodynamics Product object
-             * 
-             */
+            AerodynamicsProduct(string name, int durability,  double cfDrag, int frontWingWidth, int backWingWidth, int downForce );
             ~AerodynamicsProduct();
-
-            /**
-             * @brief Construct a new Aerodynamics Product object
-             * 
-             */
             AerodynamicsProduct();
-            
+            double getCFDrag();
+            int getFrontWingWidth();
+            int getBackWingWidth();
+            int getDownForce();
         private:
             double cfDrag; //1.30
             int frontWingWidth; //in mm

@@ -1,9 +1,9 @@
 /**
  * @file ElectronicsProduct.h
- * @author Werner Graaff
+ * @author Werner Graaff (u18050362@tuks.co.za)
  * @brief 
  * @version 0.1
- * @date 2020-11-08
+ * @date 2020-11-09
  * 
  * @copyright Copyright (c) 2020
  * 
@@ -20,28 +20,13 @@ using namespace std;
     class ElectronicsProduct : public CarPart {
         
         public:
-            /**
-             * @brief Construct a new Electronics Product object
-             * 
-             * @param name 
-             * @param coreFreq 
-             * @param powerOutput 
-             * @param accSpeed 
-             * @param gearChangeSpeed 
-             */
-            ElectronicsProduct(string name, int coreFreq, int powerOutput, int accSpeed, int gearChangeSpeed);
-
-            /**
-             * @brief Destroy the Electronics Product object
-             * 
-             */
+            ElectronicsProduct(string name, int durability, int coreFreq, int powerOutput, int accSpeed, int gearChangeSpeed);
             ~ElectronicsProduct();
-
-            /**
-             * @brief Construct a new Electronics Product object
-             * 
-             */
             ElectronicsProduct();
+            int getCoreFreq();
+            int getPowerOutput();
+            int getAccSpeed();
+            int getGearChangeSpeed();
             
         private:
             int coreFreq; //around 200 MHz

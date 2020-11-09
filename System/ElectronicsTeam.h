@@ -1,14 +1,13 @@
 /**
  * @file ElectronicsTeam.h
- * @author Werner Graaff
+ * @author Werner Graaff (u18050362@tuks.co.za)
  * @brief 
  * @version 0.1
- * @date 2020-11-08
+ * @date 2020-11-09
  * 
  * @copyright Copyright (c) 2020
  * 
  */
-
 #ifndef ElectronicsTeam_H
 #define ElectronicsTeam_H
 #include <iostream>
@@ -22,23 +21,8 @@ using namespace std;
     class ElectronicsTeam : public EngineeringTeam {
         
         public:
-            /**
-             * @brief Construct a new Electronics Team object
-             * 
-             */
-            ElectronicsTeam();
-
-            /**
-             * @brief Destroy the Electronics Team object
-             * 
-             */
+            ElectronicsTeam(RacingStrategy* strategy);
             ~ElectronicsTeam();
-
-            /**
-             * @brief Create a Car Part object
-             * 
-             * @return CarPart* 
-             */
             CarPart* createCarPart();
 
         private:

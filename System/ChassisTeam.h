@@ -1,9 +1,9 @@
 /**
  * @file ChassisTeam.h
- * @author Werner Graaff
+ * @author Werner Graaff (u18050362@tuks.co.za)
  * @brief 
  * @version 0.1
- * @date 2020-11-08
+ * @date 2020-11-09
  * 
  * @copyright Copyright (c) 2020
  * 
@@ -20,23 +20,8 @@ using namespace std;
     class ChassisTeam : public EngineeringTeam {
         
         public:
-            /**
-             * @brief Construct a new Chassis Team object
-             * 
-             */
-            ChassisTeam();
-
-            /**
-             * @brief Destroy the Chassis Team object
-             * 
-             */
+            ChassisTeam(RacingStrategy* strategy);
             ~ChassisTeam();
-
-            /**
-             * @brief Create a Car Part object
-             * 
-             * @return CarPart* 
-             */
             CarPart* createCarPart();
 
         private:

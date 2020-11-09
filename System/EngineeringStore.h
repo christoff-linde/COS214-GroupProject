@@ -1,5 +1,5 @@
 /**
- * @file RaceCar.h
+ * @file EngineeringStore.h
  * @author Werner Graaff (u18050362@tuks.co.za)
  * @brief 
  * @version 0.1
@@ -8,35 +8,36 @@
  * @copyright Copyright (c) 2020
  * 
  */
-
-
-#ifndef RaceCar_H
-#define RaceCar_H
+#ifndef EngineeringStore_H
+#define EngineeringStore_H
 #include <iostream>
 #include <cstring>
 #include <string>
 #include <vector>
+#include <iterator>
 #include "CarPart.h"
 #include "EngineeringTeam.h"
 using namespace std;
     
-    class RaceCar {
+    class EngineeringStore {
         
         public:
-            RaceCar(vector<CarPart*> partsList);
-            RaceCar();
+         //   EngineeringStore(vector<CarPart*> partsList);
+            EngineeringStore();
             EngineProduct* getEngine();
             ChassisProduct* getChassis();
             AerodynamicsProduct* getAerodynamics();
             ElectronicsProduct* getElectronics();
-            ~RaceCar();
+            ~EngineeringStore();
+            void addToList(CarPart*);
             
+            vector <CarPart*> getPartsList();
 
         private:
-            EngineProduct* carEngine;
-            ChassisProduct* carChassis;
-            AerodynamicsProduct* carAerodynamics;
-            ElectronicsProduct* carElectronics;
+        vector <CarPart*> partsList;
+      
+
+          
 
             
     };
