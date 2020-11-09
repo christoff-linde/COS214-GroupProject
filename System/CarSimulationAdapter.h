@@ -2,6 +2,7 @@
 #define CARSIMULATIONADAPTER_H
 
 #include "VirtualRaceCar.h"
+#include "RaceCar.h"
 
 class CarSimulationAdapter : public VirtualRaceCar
 {
@@ -12,10 +13,10 @@ class CarSimulationAdapter : public VirtualRaceCar
 		~CarSimulationAdapter();
 		void setCar(RaceCar* r);
 		RaceCar* getCar();
-		int getEngineLevel();
-		int getAerodynamicsLevel();
-		int getChassisLevel();
-		int getElectronicsLevel();
+		double getEngineLevel();
+		double getAerodynamicsLevel();
+		double getChassisLevel();
+		double getElectronicsLevel();
 
 	private:
 

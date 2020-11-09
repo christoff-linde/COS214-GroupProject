@@ -11,9 +11,11 @@ class CarSimulator : public Simulator
 
 		CarSimulator();
 		virtual ~CarSimulator();
-		void simulate();
 		void setSubject(VirtualRaceCar* subject);
 		VirtualRaceCar* getSubject();
+
+	protected:
+		void simulate();
 
 
 	private:

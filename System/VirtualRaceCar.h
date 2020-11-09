@@ -8,21 +8,21 @@ class VirtualRaceCar
 
 		VirtualRaceCar();
 		virtual ~VirtualRaceCar();
-		virtual int getEngineLevel();
-		void setEngineLevel(int l);
-		virtual int getAerodynamicsLevel();
-		void setAerodynamicsLevel(int l);
-		virtual int getChassisLevel();
-		void setChassisLevel(int l);
-		virtual int getElectronicsLevel();
-		void setElectronicsLevel(int l);
+		virtual double getEngineLevel();
+		void setEngineLevel(double l);
+		virtual double getAerodynamicsLevel();
+		void setAerodynamicsLevel(double l);
+		virtual double getChassisLevel();
+		void setChassisLevel(double l);
+		virtual double getElectronicsLevel();
+		void setElectronicsLevel(double l);
 
 	private:
 
-		int engineLevel;
-		int aerodynamicsLevel;
-		int chassisLevel;
-		int electronicsLevel;
+		double engineLevel;
+		double aerodynamicsLevel;
+		double chassisLevel;
+		double electronicsLevel;
 
 };
 

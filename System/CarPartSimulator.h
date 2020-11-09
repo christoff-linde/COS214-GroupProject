@@ -11,9 +11,11 @@ class CarPartSimulator : public Simulator
 
 		CarPartSimulator();
 		virtual ~CarPartSimulator();
-		void simulate();
 		void setSubject(VirtualCarPart* subject);
 		VirtualCarPart* getSubject();
+
+	protected:
+		void simulate();
 
 
 	private:
