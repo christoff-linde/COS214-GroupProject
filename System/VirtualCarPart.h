@@ -1,3 +1,13 @@
+/**
+ * @file VirtualCarPart.h
+ * @author Daelin Campleman
+ * @brief 
+ * @version 0.1
+ * @date 2020-11-09
+ * 
+ * @copyright Copyright (c) 2020
+ * 
+ */
 #ifndef VIRTUALCARPART_H
 #define VIRTUALCARPART_H
 
@@ -9,19 +19,44 @@ class VirtualCarPart
 {
 
 	public:
-
+		/**
+       	 * @brief Construct a Virtual Car Part
+         */
 		VirtualCarPart();
+		/**
+       	 * @brief Destroy the Virtual Car Part
+         */
 		virtual ~VirtualCarPart();
-		virtual int getLevel();
+		/**
+         * @brief Get the level
+         * 
+         * @return double 
+         */
+		virtual double getLevel();
+		/**
+         * @brief Set the name
+         * 
+         * @param n 
+         */
 		void setName(string n);
+		/**
+         * @brief Get the name
+         * 
+         * @return string 
+         */
 		string getName();
 
 	protected:
-		void setLevel(int l);
+		/**
+         * @brief Set the level
+         * 
+         * @param l
+         */
+		void setLevel(double l);
 
 	private:
 
-		int level;
+		double level;
 		string name;
 
 };

@@ -8,34 +8,34 @@ VirtualRaceCar::~VirtualRaceCar(){
 
 }
 
-int VirtualRaceCar::getEngineLevel(){
+double VirtualRaceCar::getEngineLevel(){
 	return engineLevel;
 }
 
-void VirtualRaceCar::setEngineLevel(int l){
+void VirtualRaceCar::setEngineLevel(double l){
 	engineLevel = l;
 }
 
-int VirtualRaceCar::getAerodynamicsLevel(){
+double VirtualRaceCar::getAerodynamicsLevel(){
 	return aerodynamicsLevel;
 }
 
-void VirtualRaceCar::setAerodynamicsLevel(int l){
+void VirtualRaceCar::setAerodynamicsLevel(double l){
 	aerodynamicsLevel = l;
 }
 
-int VirtualRaceCar::getChassisLevel(){
+double VirtualRaceCar::getChassisLevel(){
 	return chassisLevel;
 }
 
-void VirtualRaceCar::setChassisLevel(int l){
+void VirtualRaceCar::setChassisLevel(double l){
 	chassisLevel = l;
 }
 
-int VirtualRaceCar::getElectronicsLevel(){
+double VirtualRaceCar::getElectronicsLevel(){
 	return electronicsLevel;
 }
 
-void VirtualRaceCar::setElectronicsLevel(int l){
+void VirtualRaceCar::setElectronicsLevel(double l){
 	electronicsLevel = l;
 }

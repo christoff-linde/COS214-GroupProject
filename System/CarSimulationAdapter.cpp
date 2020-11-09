@@ -17,30 +17,53 @@ RaceCar* CarSimulationAdaptergetCar(){
 }
 
 
-int CarSimulationAdapter::getEngineLevel(){
-	// convert RaceCars engine attributes to a value
-	// representing a VirtualRaceCar's engineLevel
+double CarSimulationAdapter::getEngineLevel(){
+	double l = car->getCarEngine()->getHorsePower()/100;
 
-	return 0;
+	l *= car->getCarEngine()->getAirChargeRatio();
+
+	l *= car->getCarEngine()->getCompressionRatio();
+
+	l *= car->getCarEngine()->getHorsePower();
+
+	return l;
 }
 
-int CarSimulationAdapter::getAerodynamicsLevel(){
-	// convert RaceCars aerodynamics attributes to a value
-	// representing a VirtualRaceCar's aerodynamicsLevel
+double CarSimulationAdapter::getAerodynamicsLevel(){
+	double l = 0;
 
-	return 0;
+	double widthCalc = 1 / (car->getCarAerodynamics()->getFrontWingWidth() - car->getCarAerodynamics()->getBackWingWidth());
+
+	double df;
+
+	// calculate difference from optimal
+	if(car->getCarAerodynamics()->getDownForce() > 4000){
+		df = car->getCarAerodynamics()->getDownForce() - 4000;
+	}else{
+		df = 4000 - car->getCarAerodynamics()->getDownForce();
+	}
+
+	l = widthCalc * 1/df;
+
+	l *= 1/car->getCarAerodynamics()->getCfDrag();
+
+	return l;
 }
 
-int CarSimulationAdapter::getChassisLevel(){
-	// convert RaceCars chassis attributes to a value
-	// representing a VirtualRaceCar's chassisLevel
+double CarSimulationAdapter::getChassisLevel(){
+	double l = car->getCarChassis()->getTorque();
 
-	return 0;
+	l *= car->getCarChassis()->getPoissonRatio();
+
+	return l;
 }
 
-int CarSimulationAdapter::getElectronicsLevel(){
-	// convert RaceCars electronics attributes to a value
-	// representing a VirtualRaceCar's electronicsLevel
+double CarSimulationAdapter::getElectronicsLevel(){
+	double l = car->getCarElectronics()->getPowerOutput();
 
-	return 0;
+	l *= car->getCarElectronics()->getAccSpeed()/1000;
+
+	l *= 1/car->getCarElectronics()->getGearChangeSpeed();
+
+	return l;
 }
