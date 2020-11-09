@@ -12,10 +12,9 @@
 #define COMPONENTS_H
 
 #include <iostream>
-#include "Testing.h"
 #include "RaceCar.h"
 using namespace std;
-
+class Testing;
 class Components
 {
 
