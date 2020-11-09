@@ -1,8 +1,8 @@
 /**
  * @file Truck.h
  * @author Christoff Linde
- * @brief Truck method of Transport
- * @version 0.1
+ * @brief ConcreteProduct participant. Truck method of Transport
+ * @version 0.2
  * @date 2020-11-05
  *
  * @copyright Copyright (c) 2020
@@ -17,7 +17,14 @@
 class Truck : public Transport
 {
 public:
+    /**
+     * @brief Construct a new Truck object
+     */
     Truck();
+
+    /**
+     * @brief Destroy the Truck object
+     */
     ~Truck();
 };
 

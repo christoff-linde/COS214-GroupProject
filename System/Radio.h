@@ -1,7 +1,7 @@
 /**
  * @file Radio.h
  * @author Christoff Linde
- * @brief
+ * @brief Specific type of GarageEquipment
  * @version 0.1
  * @date 2020-10-31
  *

@@ -1,7 +1,7 @@
 /**
  * @file Wrench.h
  * @author Christoff Linde
- * @brief
+ * @brief Specific type of ToolEquipment
  * @version 0.1
  * @date 2020-10-31
  *
@@ -9,12 +9,12 @@
  *
  */
 
-#include "ToolingEquipment.h"
+#include "ToolEquipment.h"
 
 #if !defined(WRENCH_H)
 #define WRENCH_H
 
-class Wrench : public ToolingEquipment
+class Wrench : public ToolEquipment
 {
 public:
     /**

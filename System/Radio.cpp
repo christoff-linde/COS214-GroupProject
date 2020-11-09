@@ -1,7 +1,7 @@
 /**
  * @file Radio.cpp
  * @author Christoff Linde
- * @brief Implementation of Radio
+ * @brief Specific type of GarageEquipment
  * @version 0.1
  * @date 2020-11-05
  *

@@ -1,8 +1,8 @@
 /**
  * @file Aircraft.h
  * @author Christoff Linde
- * @brief Aircraft method of Transport
- * @version 0.1
+ * @brief ConcreteProduct participant. Specific type of Transport
+ * @version 0.2
  * @date 2020-11-05
  *
  * @copyright Copyright (c) 2020
@@ -17,8 +17,10 @@
 class Aircraft : public Transport
 {
 public:
+    /**
+     * @brief Construct a new Aircraft object
+     */
     Aircraft();
-    ~Aircraft();
 };
 
 #endif // AIRCRAFT_H
