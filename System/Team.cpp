@@ -12,20 +12,43 @@
 #include "Team.h"
 
 Team::Team()
-{}
+{
+    this->engineeringTeam = nullptr;
+    this->logisticsTeam = nullptr;
+}
 
 Team::~Team()
-{}
+{
+    for (auto&& car : teamCars)
+        delete car;
+
+    delete engineeringTeam;
+    engineeringTeam = nullptr;
+    delete logisticsTeam;
+    logisticsTeam = nullptr;
+}
 
 void Team::scheduleRace(Race* _race, RacingStrategy* _racingStrategy)
-{}
+{
+    this->engineeringTeam->notifySubscribers();
+}
 
 std::string Team::getTeamName()
 {
-    throw "Not yet implemented";
+    return teamName;
 }
 
 RacingStrategy* Team::getRacingStrategy()
 {
-    throw "Not yet implemented";
+    return this->racingStrategy;
+}
+
+void Team::assignEngineeringTeam(EngineeringTeam* _engineeringTeam)
+{
+    this->engineeringTeam = _engineeringTeam;
+}
+
+void Team::assignLogisticsTeam(LogisticsTeam* _logisticsTeam)
+{
+    this->logisticsTeam = _logisticsTeam;
 }

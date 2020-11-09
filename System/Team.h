@@ -42,24 +42,39 @@ public:
     void scheduleRace(Race* _race, RacingStrategy* _racingStrategy);
 
     /**
-     * @brief Get the Team Name 
-     * 
+     * @brief Get the Team Name
+     *
      * @return std::string name of the Team
      */
     std::string getTeamName();
 
     /**
      * @brief Get the RacingStrategy of the Team
-     * 
+     *
      * @return RacingStrategy* pointer to the RacingStrategy
      */
     RacingStrategy* getRacingStrategy();
+
+    /**
+     * @brief assign a EngineeringTeam to the engineeringTeam vector
+     * 
+     * @param _engineeringTeam pointer to the EngineeringTeam to be added
+     */
+    void assignEngineeringTeam(EngineeringTeam* _engineeringTeam);
+
+    /**
+     * @brief assign a LogisticsTeam to the engineeringTeam vector
+     * 
+     * @param _engineeringTeam pointer to the LogisticsTeam to be added
+     */
+    void assignLogisticsTeam(LogisticsTeam* _logisticsTeam);
 
 private:
     std::vector<RaceCar*> teamCars; /** holds RaceCar* to the two RaceCars of the Team */
     EngineeringTeam* engineeringTeam; /** holds a pointer to the EngineeringTeam assigned to the Team */
     LogisticsTeam* logisticsTeam; /** holds a pointer to the LogisticsTeam assigned to the Team */
     std::string teamName; /** the name of the Team */
+    RacingStrategy* racingStrategy; /** holds a pointer to the RacingStrategy to be used */
 };
 
 #endif // TEAM_H
