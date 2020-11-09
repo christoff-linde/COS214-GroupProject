@@ -9,33 +9,30 @@
  *
  */
 
-class Team;
-class RaceTrack;
+
 
 #if !defined(RACE_H)
 #define RACE_H
 
-#include <string>
-#include <vector>
-#include "Team.h"
-#include "RaceTrack.h"
-#include "RaceHandler.h"
 #include "PracticeHandler.h"
 #include "QualifyingHandler.h"
 #include "FinalHandler.h"
 
+#include <string>
+#include <vector>
+
 class Race
 {
 public:
-    Race(string location, string date);
+    Race(std::string location, std::string date, RaceTrack* racetrack);
     ~Race();
     void runRaces();
-    string getLocation();
-    string getDate();
+    std::string getLocation();
+    std::string getDate();
     void RegisterTeams(std::vector<Team*> teams);
-    vector<Team*> getTeams();
-    vector<Team*> getPositions();
-    void setPositions(vector<Team*>);
+    std::vector<Team*> getTeams();
+    std::vector<Team*> getPositions();
+    void setPositions(std::vector<Team*>);
     int getPoints(Team* team);
     RaceTrack* getTrack();
     void setTrack(RaceTrack*);
@@ -49,4 +46,4 @@ private:
     bool isLocal;
 };
 
-#endif 
+#endif

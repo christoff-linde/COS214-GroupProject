@@ -22,7 +22,7 @@ class Testing
 {
 public:
     Testing();
-    ~Testing();
+    virtual ~Testing();
     virtual void doTest(RaceCar* car) = 0;
     virtual void doTest(CarPart* part) = 0;
     virtual void handleChange(Components* c) = 0;

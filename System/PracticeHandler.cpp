@@ -1,19 +1,21 @@
 #include "PracticeHandler.h"
-
+#include <vector>
+#include<string>
 using namespace std;
 
-PracticeHandler::PracticeHandler(Race* race){
-    event = race;
+PracticeHandler::PracticeHandler(std::vector<Team*> pos, RaceTrack* tk) {
+    positions = pos;
+    track = tk;
 }
 
-vector<Team*> PracticeHandler::race(string raceDay){
-    if(raceDay == "practice"){
+vector<Team*> PracticeHandler::race(std::string raceDay) {
+    if (raceDay == "practice") {
         runRace();
-        return event->getPositions();
+        return positions;
     }
     else
     {
         return RaceHandler::race(raceDay);
     }
-    
+
 }

@@ -8,16 +8,17 @@
  * @copyright Copyright (c) 2020
  *
  */
- 
+
 
 #if !defined(QUALIFYINGHANDLER_H)
 #define QUALIFYINGHANDLER_H
 #include "RaceHandler.h"
-
-class QualifyingHandler: public RaceHandler{
-    public:
-        QualifyingHandler(Race* race);
-        vector<Team*> QualifyingHandler::race(string raceDay) override;
+#include <vector>
+#include <string>
+class QualifyingHandler : public RaceHandler {
+public:
+    QualifyingHandler(std::vector<Team*> pos, RaceTrack* tk);
+    std::vector<Team*> race(std::string raceDay) override;
 };
 
 #endif
