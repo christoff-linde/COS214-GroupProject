@@ -59,5 +59,4 @@ void EquipmentContainer::createInventory()
     inventory->add(fuelTank);
     Radio* radio = new Radio();
     inventory->add(radio);
-
 }

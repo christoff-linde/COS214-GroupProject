@@ -21,13 +21,13 @@ double RaceTrackSimulationAdapter::getScore(){
 }
 
 double RaceTrackSimulationAdapter::getTotalLength(){
-	return length;
+	return track->getTotalLength();
 }
 
 int RaceTrackSimulationAdapter::getTurns(){
-	return turns;
+	return track->getNumTurns();
 }
 
 double RaceTrackSimulationAdapter::getLongestStraight(){
-	return longestStraight;
+	return track->getLongestStraight();
 }
