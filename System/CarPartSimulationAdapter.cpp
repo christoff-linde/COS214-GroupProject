@@ -1,6 +1,6 @@
 #include "CarPartSimulationAdapter.h"
 
-CarPartSimulationAdapter::CarPartSimulationAdapter(CarPart* p){
+CarPartSimulationAdapter::CarPartSimulationAdapter(CarPart* p) : VirtualCarPart(p->getName()){
 	this->part = p;
 }
 

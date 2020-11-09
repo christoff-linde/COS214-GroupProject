@@ -1,6 +1,6 @@
 #include "EngineSimulationAdapter.h"
 
-EngineSimulationAdapter::EngineSimulationAdapter(EngineProduct* part){
+EngineSimulationAdapter::EngineSimulationAdapter(EngineProduct* part) : VirtualCarPart(part->getName()){
 	this->part = part;
 	calculateLevel();
 }

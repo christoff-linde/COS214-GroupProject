@@ -1,7 +1,7 @@
 #include "VirtualCarPart.h"
 
-VirtualCarPart::VirtualCarPart(){
-
+VirtualCarPart::VirtualCarPart(string name){
+	this->name = name;
 }
 
 VirtualCarPart::~VirtualCarPart(){

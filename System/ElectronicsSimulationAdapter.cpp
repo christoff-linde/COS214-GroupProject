@@ -1,6 +1,6 @@
 #include "ElectronicsSimulationAdapter.h"
 
-ElectronicsSimulationAdapter::ElectronicsSimulationAdapter(ElectronicsProduct* part){
+ElectronicsSimulationAdapter::ElectronicsSimulationAdapter(ElectronicsProduct* part) : VirtualCarPart(part->getName()){
 	this->part = part;
 	calculateLevel();
 }

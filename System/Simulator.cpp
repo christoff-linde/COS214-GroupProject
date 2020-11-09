@@ -25,3 +25,11 @@ void Simulator::setResult(double result){
 double Simulator::getResult(){
 	return this->result;
 }
+
+void Simulator::setSubject(VirtualRaceCar* subject){
+
+}
+
+void Simulator::setSubject(VirtualCarPart* subject){
+	
+}

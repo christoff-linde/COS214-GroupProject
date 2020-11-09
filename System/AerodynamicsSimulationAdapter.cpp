@@ -1,6 +1,6 @@
 #include "AerodynamicsSimulationAdapter.h"
 
-AerodynamicsSimulationAdapter::AerodynamicsSimulationAdapter(AerodynamicsProduct* part){
+AerodynamicsSimulationAdapter::AerodynamicsSimulationAdapter(AerodynamicsProduct* part) : VirtualCarPart(part->getName()){
 	this->part = part;
 	calculateLevel();
 }

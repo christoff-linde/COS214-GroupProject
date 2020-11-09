@@ -22,7 +22,7 @@ class VirtualCarPart
 		/**
        	 * @brief Construct a Virtual Car Part
          */
-		VirtualCarPart();
+		VirtualCarPart(string name);
 		/**
        	 * @brief Destroy the Virtual Car Part
          */
