@@ -13,12 +13,21 @@ void RaceTrackSimulationAdapter::setRaceTrack(RaceTrack* t){
 }
 
 RaceTrack* RaceTrackSimulationAdapter::getRaceTrack(){
-	return track;
+	return this->track;
 }
 
-int RaceTrackSimulationAdapter::getLevel(){
-	// convert RaceTrack attributes to a something
-	// representing a VirtualRaceTrack
+double RaceTrackSimulationAdapter::getScore(){
+	return score;
+}
 
-	return 0;
+double RaceTrackSimulationAdapter::getTotalLength(){
+	return length;
+}
+
+int RaceTrackSimulationAdapter::getTurns(){
+	return turns;
+}
+
+double RaceTrackSimulationAdapter::getLongestStraight(){
+	return longestStraight;
 }

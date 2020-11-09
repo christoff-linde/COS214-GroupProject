@@ -2,6 +2,7 @@
 #define RACETRACKSIMULATIONADAPTER_H
 
 #include "VirtualRaceTrack.h"
+#include "RaceTrack.h"
 
 class RaceTrackSimulationAdapter : public VirtualRaceTrack
 {
@@ -13,6 +14,9 @@ class RaceTrackSimulationAdapter : public VirtualRaceTrack
 		void setRaceTrack(RaceTrack* t);
 		RaceTrack* getRaceTrack();
 		double getScore();
+		double getTotalLength();
+		int getTurns();
+		double getLongestStraight();
 
 	private:
 
