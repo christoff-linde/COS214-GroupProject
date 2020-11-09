@@ -7,7 +7,11 @@ EngineeringStore::EngineeringStore()
 
 EngineeringStore::~EngineeringStore()
 {
-
+   for(int i=0; i< this->partsList.size(); ++i)
+   {
+      delete partsList[i];
+   }
+   partsList.clear();
 }
 
 void EngineeringStore::addToList(CarPart* carPart)
