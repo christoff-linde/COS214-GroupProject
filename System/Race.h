@@ -1,19 +1,26 @@
 /**
  * @file Race.h
- * @author Christoff Botha & Christoff Linde
+ * @author Christoff Botha
  * @brief
  * @version 0.1
- * @date 2020-11-05
+ * @date 2020-11-09
  *
  * @copyright Copyright (c) 2020
  *
  */
 
+
+
 #if !defined(RACE_H)
 #define RACE_H
 
 #include "Team.h"
-#include "RaceState.h"
+#include "RaceTrack.h"
+#include "RaceHandler.h"
+#include "PracticeHandler.h"
+#include "QualifyingHandler.h"
+#include "FinalHandler.h"
+
 #include <string>
 #include <vector>
 
@@ -28,21 +35,12 @@ public:
     void RegisterTeam(Team* team);
     vector<Team*> getTeams();
     vector<Team*> getPositions();
-
-    /**
-     * @brief Get the isLocal variable
-     * 
-     * @return true for EU Race
-     * @return false for NON-EU Race
-     */
-    bool getIsLocal();
 private:
     void nextRace();
-    RaceState* state;
+    raceState state;
     string location;
     vector<Team*> teams;
     string date;
-    bool isLocal; /** indicates whether a Race is EU or NON-EU */
 };
 
-#endif // RACE_H
+#endif 
