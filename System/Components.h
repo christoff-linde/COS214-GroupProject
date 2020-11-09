@@ -13,6 +13,7 @@
 
 #include <iostream>
 #include "Testing.h"
+#include "RaceCar.h"
 using namespace std;
 
 class Components 
@@ -25,12 +26,11 @@ public:
         Components();
         ~Components();
         int change();
-        void doTest();
+        void doTest(RaceCar* car); // do car test
+        void doTest(CarPart* part); // do part test
         void setState(Testing* state);
 
-		
-		 
-	
+
 };
  
 #endif
