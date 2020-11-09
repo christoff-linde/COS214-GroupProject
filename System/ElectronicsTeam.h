@@ -21,8 +21,24 @@ using namespace std;
     class ElectronicsTeam : public EngineeringTeam {
         
         public:
+        /**
+         * @brief Construct a new Electronics Team object
+         * 
+         * @param strategy 
+         */
             ElectronicsTeam(RacingStrategy* strategy);
+        
+        /**
+         * @brief Destroy the Electronics Team object
+         * 
+         */
             ~ElectronicsTeam();
+
+        /**
+         * @brief Create a Car Part object
+         * 
+         * @return CarPart* 
+         */
             CarPart* createCarPart();
 
         private:

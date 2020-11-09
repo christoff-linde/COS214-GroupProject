@@ -20,8 +20,24 @@ using namespace std;
     class ChassisTeam : public EngineeringTeam {
         
         public:
+        /**
+         * @brief Construct a new Chassis Team object
+         * 
+         * @param strategy 
+         */
             ChassisTeam(RacingStrategy* strategy);
+        
+        /**
+         * @brief Destroy the Chassis Team object
+         * 
+         */
             ~ChassisTeam();
+
+        /**
+         * @brief Create a Car Part object
+         * 
+         * @return CarPart* 
+         */
             CarPart* createCarPart();
 
         private:

@@ -33,6 +33,33 @@ EngineProduct* EngineeringStore::getEngine()
      }
 }
 
+vector <CarPart*> EngineeringStore::getStrategyList(string strategy)
+{
+    vector <CarPart*> strategyList;
+   vector <CarPart*> :: iterator it;
+     for(it = partsList.begin(); it != partsList.end(); ++it)
+     {
+       if((*it)->getName().find("Engine") != string::npos && (*it)->getName().find(strategy) != string::npos)
+         {
+            strategyList.push_back(*it);
+         }
+         else if((*it)->getName().find("Chassis") != string::npos && (*it)->getName().find(strategy) != string::npos)
+         {
+            strategyList.push_back(*it);
+         }
+         else if((*it)->getName().find("Electronics") != string::npos && (*it)->getName().find(strategy) != string::npos)
+         {
+            strategyList.push_back(*it);
+         }
+         else if((*it)->getName().find("Aerodynamics") != string::npos && (*it)->getName().find(strategy) != string::npos)
+         {
+            strategyList.push_back(*it);
+         }
+        
+     } 
+     return strategyList;
+}
+
 ChassisProduct* EngineeringStore::getChassis()
 {
       vector <CarPart*> :: iterator it;
