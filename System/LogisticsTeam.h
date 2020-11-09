@@ -30,10 +30,12 @@ public:
     ~LogisticsTeam();
 
     /**
-     * @brief update method from Subscriber
+     * @brief update method from the Subscriber. 
      * 
+     * @param _carPartsList a list of CarPart* that should be added to the Shipment
+     * @param _raceCar a RaceCar* to the RaceCar that should 
      */
-    void update();
+    void update(list<CarPart*> _carPartsList, RaceCar* _raceCar);
 
 private:
     std::vector<Shipment*> shipmentList; /** holds Shipment* to shipments that the LogisticsTeam has already scheduled/prepared */
