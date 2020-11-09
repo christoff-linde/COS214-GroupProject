@@ -31,3 +31,8 @@ string LaidBack::getTyreType()
 {
     return "Soft";
 }
+
+int LaidBack::getAmountOfTyreSets()
+{
+    return 3;
+}

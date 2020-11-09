@@ -45,6 +45,13 @@ class Aggressive: public RacingStrategy
          * @return string 
          */
         string getTyreType();
+
+        /**
+         * @brief Get the Tyre Type object\
+         * 
+         * @return string 
+         */
+        int getAmountOfTyreSets();
 };
 
 #endif
