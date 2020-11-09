@@ -15,7 +15,7 @@
 #include "Testing.h"
 using namespace std;
 
-class CsSimulation
+class CsSimulation: public Testing
 {
 
     private:

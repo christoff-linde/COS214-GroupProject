@@ -1,15 +1,19 @@
-using namespace std;
 #include "CsSimulation.h"
 #include "Simulator.h"
 #include "CarSimulator.h"
 #include "CarPartSimulator.h"
 #include "VirtualCarPart.h"
+#include "CarSimulationAdapter.h"
 #include "ChassisSimulationAdapter.h"
-#include "AerodynamcsSimulationAdapter.h"
+#include "AerodynamicsSimulationAdapter.h"
 #include "EngineSimulationAdapter.h"
 #include "ElectronicsSimulationAdapter.h"
+#include "Inactive.h"
 #include "typeinfo"
 #include <string>
+
+using namespace std;
+
 CsSimulation::CsSimulation(){
 
 }
@@ -46,17 +50,17 @@ void CsSimulation::doTest(CarPart* part){
     Simulator* PartSim = new CarPartSimulator();
 
     if(typeid(part) == typeid(testChassis)){
-        VirtualCarPart* ChassisAdapter = new ChassisSimulationAdapter(part);
+        VirtualCarPart* ChassisAdapter = new ChassisSimulationAdapter((ChassisProduct*)part);
         PartSim->setSubject(ChassisAdapter);
     }else if(typeid(part) == typeid(testAero)){ 
-        VirtualCarPart* AerodynamicsAdapter = new AerodynamcsSimulationAdapter(part);
-        PartSim->setSubject(ChassisAdapter);
+        VirtualCarPart* AerodynamicsAdapter = new AerodynamicsSimulationAdapter((AerodynamicsProduct*)part);
+        PartSim->setSubject(AerodynamicsAdapter);
     }else if(typeid(part) == typeid(testEngine)){
-        VirtualCarPart* EngineAdapter = new EngineSimulationAdapter(part);
-        PartSim->setSubject(ChassisAdapter);
+        VirtualCarPart* EngineAdapter = new EngineSimulationAdapter((EngineProduct*)part);
+        PartSim->setSubject(EngineAdapter);
     }else if(typeid(part) == typeid(testElectric)){
-        VirtualCarPart* ElectronicsAdapter = new ElectronicsSimulationAdapter(part);
-        PartSim->setSubject(ChassisAdapter);
+        VirtualCarPart* ElectronicsAdapter = new ElectronicsSimulationAdapter((ElectronicsProduct*)part);
+        PartSim->setSubject(ElectronicsAdapter);
     } 
 
     PartSim->runSimulator();
