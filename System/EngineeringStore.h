@@ -1,5 +1,5 @@
 /**
- * @file RaceCar.h
+ * @file EngineeringStore.h
  * @author Werner Graaff (u18050362@tuks.co.za)
  * @brief 
  * @version 0.1
@@ -8,33 +8,25 @@
  * @copyright Copyright (c) 2020
  * 
  */
-
-
-#ifndef RaceCar_H
-#define RaceCar_H
+#ifndef EngineeringStore_H
+#define EngineeringStore_H
 #include <iostream>
 #include <cstring>
 #include <string>
 #include <vector>
+#include <iterator>
 #include "CarPart.h"
 #include "EngineeringTeam.h"
 using namespace std;
     
-    class RaceCar {
+    class EngineeringStore {
         
         public:
-        /**
-         * @brief Construct a new Race Car object
-         * 
-         * @param partsList 
-         */
-            RaceCar(vector<CarPart*> partsList);
-        
-        /**
-         * @brief Construct a new Race Car object
-         * 
-         */
-            RaceCar();
+         /**
+          * @brief Construct a new Engineering Store object
+          * 
+          */
+            EngineeringStore();
 
         /**
          * @brief Get the Engine object
@@ -42,7 +34,7 @@ using namespace std;
          * @return EngineProduct* 
          */
             EngineProduct* getEngine();
-        
+
         /**
          * @brief Get the Chassis object
          * 
@@ -65,36 +57,40 @@ using namespace std;
             ElectronicsProduct* getElectronics();
 
         /**
-         * @brief Destroy the Race Car object
+         * @brief Destroy the Engineering Store object
          * 
          */
-            ~RaceCar();
-            
+            ~EngineeringStore();
+
+        /**
+         * @brief Add a CarPart object to the vector of CarParts
+         * 
+         */
+            void addToList(CarPart*);
+        /**
+         * @brief Get the Strategy List object
+         * 
+         * @param strategy 
+         * @return vector <CarPart*> 
+         */
+            vector <CarPart*> getStrategyList(string strategy);
+
+        /**
+         * @brief Get the Parts List object
+         * 
+         * @return vector <CarPart*> 
+         */
+            vector <CarPart*> getPartsList();
 
         private:
         /**
-         * @brief A pointer to a engine object
+         * @brief A vector of CarParts
          * 
          */
-            EngineProduct* carEngine;
-        
-        /**
-         * @brief A pointer to a chassis object
-         * 
-         */
-            ChassisProduct* carChassis;
-        
-        /**
-         * @brief A pointer to an aerodynamics product
-         * 
-         */
-            AerodynamicsProduct* carAerodynamics;
+        vector <CarPart*> partsList;
+      
 
-        /**
-         * @brief A pointer to an electronics product
-         * 
-         */
-            ElectronicsProduct* carElectronics;
+          
 
             
     };

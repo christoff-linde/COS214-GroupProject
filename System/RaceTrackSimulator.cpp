@@ -12,9 +12,9 @@ RaceTrackSimulator::~RaceTrackSimulator(){
 }
 
 void RaceTrackSimulator::simulate(){
-	double length = 1000;
-	int turns = 12;
-	double straight = 50.2;
+	double length = subject->getTotalLength();
+	int turns = subject->getTurns();
+	double straight = subject->getLongestStraight();
 	double difficulty = length*turns/straight;
 	
 	cout << "\033[4;37;Track simulation results:\033[0m" << endl;

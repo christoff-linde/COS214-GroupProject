@@ -14,26 +14,16 @@ EngineProduct::EngineProduct(string name, int durability, int voltage, double co
 {
     this->setName(name);
     this->setDurability(durability);
-    this->setVoltage(voltage);
-    this->setCompressionRatio(compressionRatio);
-    this->setAirChargeRatio(airChargeRatio);
-    this->setHorsePower(horsepower);
+    this->voltage = voltage;
+    this->compressionRatio = compressionRatio;
+    this->airChargeRatio = airChargeRatio;
+    this->horsepower = horsepower;
     
 }
 
 int EngineProduct::getVoltage()
 {
     return this->voltage;
-}
-
-void EngineProduct::setVoltage(int voltage)
-{
-    this->voltage = voltage;
-}
-
-void EngineProduct::setCompressionRatio(double ratio)
-{
-    this->compressionRatio = ratio;
 }
 
 double EngineProduct::getCompressionRatio()
@@ -46,17 +36,7 @@ double EngineProduct::getAirChargeRatio()
     return this->airChargeRatio;
 }
 
-void EngineProduct::setAirChargeRatio(double airCharge)
-{
-    this->airChargeRatio = airCharge;
-}
-
-void EngineProduct::setHorsePower(int horsePower)
-{
-    this->horsepower = horsePower;
-}
-
-int EngineProduct::getHorsePower()
+int EngineProduct::getHorsepower()
 {
     return this->horsepower;
 }
