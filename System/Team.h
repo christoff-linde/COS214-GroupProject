@@ -9,15 +9,17 @@
  *
  */
 
+class Race;
+
 #if !defined(TEAM_H)
 #define TEAM_H
 
 #include <vector>
+// #include "Race.h"
 #include "EngineeringTeam.h"
 #include "EngineeringStore.h"
 #include "LogisticsTeam.h"
 #include "RacingStrategy.h"
-#include "Race.h"
 
 class EngineeringStore;
 
