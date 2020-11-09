@@ -9,12 +9,19 @@
  *
  */
 
+class Race;
+class EngineeringStore;
+class Shipment;
+
 #if !defined(LOGISTICSTEAM_H)
 #define LOGISTICSTEAM_H
 
+#include <vector>
 #include "Subscriber.h"
 #include "Shipment.h"
-#include <vector>
+#include "Race.h"
+#include "RaceCar.h"
+#include "CarPart.h"
 
 class LogisticsTeam : public Subscriber
 {
@@ -30,10 +37,13 @@ public:
     ~LogisticsTeam();
 
     /**
-     * @brief update method from Subscriber
-     * 
+     * @brief update method from the Subscriber.
+     *
+     * @param _carPartsList a list of CarPart* that should be added to the Shipment
+     * @param _raceCar a RaceCar* to the RaceCar that should
+     * @param _race the Race that needs to be prepared for
      */
-    void update();
+    void update(std::vector<CarPart*> _carPartsList, RaceCar* _raceCar, Race* _race);
 
 private:
     std::vector<Shipment*> shipmentList; /** holds Shipment* to shipments that the LogisticsTeam has already scheduled/prepared */

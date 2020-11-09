@@ -11,7 +11,7 @@
 
 #include "Jack.h"
 
-Jack::Jack() : ToolingEquipment()
+Jack::Jack() : ToolEquipment()
 {
     this->name = "Jack";
 }

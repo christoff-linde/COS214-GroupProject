@@ -1,6 +1,6 @@
 #include "ChassisSimulationAdapter.h"
 
-ChassisSimulationAdapter::ChassisSimulationAdapter(ChassisProduct* part){
+ChassisSimulationAdapter::ChassisSimulationAdapter(ChassisProduct* part) : VirtualCarPart(part->getName()){
 	this->part = part;
 	calculateLevel();
 }
@@ -12,7 +12,7 @@ ChassisSimulationAdapter::~ChassisSimulationAdapter(){
 void ChassisSimulationAdapter::calculateLevel(){
 	double l = part->getTorque();
 
-	l *= part->getPoissonRatio();
+	l *= part->getPoissionRatio();
 
 	setLevel(l);
 }

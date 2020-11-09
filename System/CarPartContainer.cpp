@@ -18,6 +18,13 @@ CarPartContainer::~CarPartContainer()
 {
     for (auto&& carPart : inventory)
         delete carPart;
+}
 
-    this->inventory.clear();
+void CarPartContainer::createInventory()
+{}
+
+void CarPartContainer::addToInventory(std::vector<CarPart*> _carPartsList)
+{
+    for (auto&& part : _carPartsList)
+        this->inventory.push_back(part);
 }

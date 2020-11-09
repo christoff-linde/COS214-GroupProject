@@ -1,9 +1,9 @@
 using namespace std;
-#include "WindTunnel.h"
+#include "Testing.h"
 
-WindTunnel::WindTunnel(){
+Testing::Testing(){
 
 }
-WindTunnel::~WindTunnel(){
+Testing::~Testing(){
 
 }

@@ -1,6 +1,6 @@
 #include "CarPartSimulationAdapter.h"
 
-CarPartSimulationAdapter::CarPartSimulationAdapter(CarPart* p){
+CarPartSimulationAdapter::CarPartSimulationAdapter(CarPart* p) : VirtualCarPart(p->getName()){
 	this->part = p;
 }
 
@@ -16,7 +16,7 @@ CarPart* CarPartSimulationAdapter::getCarPart(){
 	return part;
 }
 
-int CarPartSimulationAdapter::getLevel(){
+double CarPartSimulationAdapter::getLevel(){
 	// convert CarPart electronics attributes to a value
 	// representing a VirtualRaceCar's electronicsLevel
 

@@ -1,6 +1,6 @@
 #include "AerodynamicsSimulationAdapter.h"
 
-AerodynamicsSimulationAdapter::AerodynamicsSimulationAdapter(AerodynamicsProduct* part){
+AerodynamicsSimulationAdapter::AerodynamicsSimulationAdapter(AerodynamicsProduct* part) : VirtualCarPart(part->getName()){
 	this->part = part;
 	calculateLevel();
 }
@@ -12,7 +12,17 @@ AerodynamicsSimulationAdapter::~AerodynamicsSimulationAdapter(){
 void AerodynamicsSimulationAdapter::calculateLevel(){
 	double l = 0;
 
-	double widthCalc = 1 / (part->getFrontWingWidth() - part->getBackWingWidth());
+	double widthCalc;
+	if(part->getFrontWingWidth() - part->getBackWingWidth() == 0){
+		widthCalc = 1;
+	}else{
+		if(part->getFrontWingWidth() > part->getBackWingWidth()){
+			widthCalc = 1 / (part->getFrontWingWidth() - part->getBackWingWidth());
+		}else{
+			widthCalc = 1 / (part->getBackWingWidth() - part->getFrontWingWidth());
+		}
+		
+	}
 
 	double df;
 
@@ -25,9 +35,9 @@ void AerodynamicsSimulationAdapter::calculateLevel(){
 
 	l = widthCalc * 1/df;
 
-	l *= 1/part->getCfDrag();
+	l *= 1/part->getCFDrag();
 
-	setLevel(l);
+	setLevel(1/l);
 }
 
 void AerodynamicsSimulationAdapter::setCarPart(AerodynamicsProduct* part){

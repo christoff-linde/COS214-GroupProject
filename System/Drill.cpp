@@ -11,7 +11,7 @@
 
 #include "Drill.h"
 
-Drill::Drill() : ToolingEquipment()
+Drill::Drill() : ToolEquipment()
 {
     this->name = "Drill";
 }

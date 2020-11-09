@@ -31,3 +31,8 @@ string Aggressive::getTyreType()
 {
     return "Hard";
 }
+
+int Aggressive::getAmountOfTyreSets()
+{
+    return 5;
+}

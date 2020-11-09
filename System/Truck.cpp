@@ -13,7 +13,7 @@
 
 Truck::Truck()
 {
-    type = "Truck";
+    name = "Truck";
 }
 
 Truck::~Truck() {}

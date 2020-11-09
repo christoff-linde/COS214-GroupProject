@@ -20,15 +20,28 @@ class CarPartContainer : public Container
 public:
     /**
      * @brief Construct a new Car Part Container object
-     * 
+     *
      */
     CarPartContainer();
 
     /**
      * @brief Destroy the Car Part Container object
-     * 
+     *
      */
     ~CarPartContainer();
+
+    /**
+     * @brief method to populate the inventory of the derived containers
+     *
+     */
+    void createInventory();
+
+    /**
+     * @brief method to add CarParts retrieved from EngineerStore to the inventory
+     *
+     * @param _carPartList vector holding CarPart* to CarPart s
+     */
+    void addToInventory(std::vector<CarPart*> _carPartList);
 
 private:
     std::vector<CarPart*> inventory; /** holds CarPart* as inventor of the CarPartContainer */

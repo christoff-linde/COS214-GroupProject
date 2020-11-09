@@ -31,15 +31,13 @@ public:
   ~EquipmentContainer();
 
   /**
-   * @brief virtual method to populate the inventory of the derived containers
-   *
-   * @example EquipmentContainer
-   *
-   */
+    * @brief method to populate the inventory of the derived containers
+    *
+    */
   void createInventory();
 
 private:
-  EquipmentComposite* inventory;
+  EquipmentComposite* inventory; /** holds an EquipmentComposite as inventory */
 };
 
 #endif // EQUIPMENTCONTAINER_H

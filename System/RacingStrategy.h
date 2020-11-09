@@ -43,6 +43,13 @@ class RacingStrategy
          * @return string 
          */
         virtual string getTyreType() = 0;
+
+        /**
+         * @brief Get the Amount Of Tyre Sets object
+         * 
+         * @return string 
+         */
+        virtual int getAmountOfTyreSets() = 0;
 };
 
 #endif

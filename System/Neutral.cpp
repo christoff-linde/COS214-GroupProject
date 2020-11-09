@@ -31,3 +31,8 @@ string Neutral::getTyreType()
 {
     return "Medium";
 }
+
+int Neutral::getAmountOfTyreSets()
+{
+    return 4;
+}
