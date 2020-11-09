@@ -1,46 +1,49 @@
 #include "Race.h"
-
-
+#include <vector>
+#include<iostream>
 using namespace std;
 
-Race::Race(string loc, string dat){
+Race::Race(std::string loc, std::string dat, RaceTrack* racetrack){
     location = loc;
     date = dat;
+    track = racetrack;
 }
 
 Race::~Race(){
-
+    positions.clear();
+    teams.clear();
 }
 
-string Race::getLocation(){
+std::string Race::getLocation(){
     return location;
 }
 
-string Race::getDate(){
+std::string Race::getDate(){
     return date;
 }
 
-void Race::RegisterTeam(Team* team){
-    teams.push_back(team);
+void Race::RegisterTeams(std::vector<Team*> teams){
+    this->teams = teams;
 }
 
-vector<Team*> Race::getPositions(){
+std::vector<Team*> Race::getPositions(){
     return positions;
 }
-void Race::setPositions(vector<Team*> pos){
+void Race::setPositions(std::vector<Team*> pos){
     positions = pos;
 }
 
-vector<Team*> Race::getTeams(){
+std::vector<Team*> Race::getTeams(){
     return teams;
 }
 
 int Race::getPoints(Team* team){
-    int i;
-    for(i =0; i<10;i++){
-        if (positions.at(i)==team){
+	int i = 0;
+    for(const Team* tem: positions){
+        if (tem == team){
             break;
         }
+	i++;
     }
     switch(i) {
       case 0 :
@@ -76,20 +79,24 @@ int Race::getPoints(Team* team){
     default:  
         return 0;
    }
+
+return 69;
 }
 
 void Race::runRaces(){
     RaceHandler * raceWeekend = new RaceHandler;
-    vector<string> weekend = {"practice", "practice", "qualifying", "final"};
-
-    PracticeHandler * practice = new PracticeHandler(this);
-    QualifyingHandler * qualifier = new QualifyingHandler(this);
-    FinalHandler * final = new FinalHandler(this);
+    std::vector<std::string> weekend = {"practice", "practice", "qualifying", "final"};
+    std::vector<Team*> pos = positions;
+    RaceTrack* tk = track;
+    PracticeHandler * practice = new PracticeHandler(pos, tk);
+    QualifyingHandler * qualifier = new QualifyingHandler(pos, tk);
+    FinalHandler * final = new FinalHandler(pos, tk);
 
     raceWeekend->setNext(practice)->setNext(qualifier)->setNext(final);
     
-    for(const string &day : weekend){
-        positions = raceWeekend->race(day);
+    for(const std::string &day : weekend){
+        setPositions(raceWeekend->race(day));
+
     }
 
     delete final;

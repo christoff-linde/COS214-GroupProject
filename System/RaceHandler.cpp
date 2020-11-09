@@ -12,7 +12,7 @@ RaceHandler* RaceHandler::setNext(RaceHandler* handler){
     return handler;
 }
 
-vector<Team*> RaceHandler::race(string raceDay){
+std::vector<Team*> RaceHandler::race(std::string raceDay){
     if(this->next){
         return this->next->race(raceDay);
     }
@@ -20,13 +20,8 @@ vector<Team*> RaceHandler::race(string raceDay){
 }
 
 void RaceHandler::runRace(){
-    if(event){
-        vector<Team*> temp = event->getPositions();
         random_device rng;
-        for(int i = 0;i< event->getTrack()->getNumLaps(); i++){
-            shuffle( temp.begin(), temp.end(), rng);
+        for(int i = 0;i< track->getNumLaps(); i++){
+            shuffle( positions.begin(), positions.end(), rng);
         }
-        event->setPositions(temp);
-    }
-    
 }

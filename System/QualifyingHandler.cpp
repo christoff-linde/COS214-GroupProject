@@ -2,19 +2,20 @@
 
 using namespace std;
 
-QualifyingHandler::QualifyingHandler(Race* race){
-    event = race;
+QualifyingHandler::QualifyingHandler(std::vector<Team*> pos, RaceTrack* tk){
+    positions = pos;
+    track = tk;
 }
 
 vector<Team*> QualifyingHandler::race(string raceDay){
     if(raceDay == "qualifying"){
         runRace();
         vector<Team*> grid;
-        for(int i =0;i<event->getPositions().size();i++){
-            grid.push_back(event->getPositions().back());
-            event->getPositions().pop_back();
+        for(int i =0;i<positions.size();i++){
+            grid.push_back(positions.back());
+            positions.pop_back();
         }
-        event->getTrack()->setGridOrder(grid);
+        track->setGridOrder(grid);
         return grid;
     }
     else

@@ -13,11 +13,12 @@
 #if !defined(QUALIFYINGHANDLER_H)
 #define QUALIFYINGHANDLER_H
 #include "RaceHandler.h"
-
+#include <vector>
+#include <string>
 class QualifyingHandler: public RaceHandler{
     public:
-        QualifyingHandler(Race* race);
-        vector<Team*> QualifyingHandler::race(string raceDay) override;
+        QualifyingHandler(std::vector<Team*> pos, RaceTrack* tk);
+        std::vector<Team*> race(std::string raceDay) override;
 };
 
 #endif

@@ -1,17 +1,20 @@
 #include "FinalHandler.h"
-
+#include <vector>
+#include<string>
 using namespace std;
 
-FinalHandler::FinalHandler(Race* race){
-    event = race;
+FinalHandler::FinalHandler(std::vector<Team*> pos, RaceTrack* tk){
+    positions = pos;
+    track = tk;
 }
 
 
-vector<Team*> FinalHandler::race(string raceDay){
+std::vector<Team*> FinalHandler::race(std::string raceDay){
     if(raceDay == "final"){
-        event->setPositions(event->getTrack()->getGridOrder());
+        positions = track->getGridOrder();
         runRace();
-        return event->getPositions();
+	
+        return positions;
     }
     else
     {

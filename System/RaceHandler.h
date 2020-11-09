@@ -12,22 +12,22 @@
 #if !defined(RACEHANDLER_H)
 #define RACEHANDLER_H
 
-
-#include "Race.h"
+class Race;
 #include <string>
 #include <vector>
+#include"RaceTrack.h"
 
 class RaceHandler
 {
     public:
-        RaceHandler();
         RaceHandler* setNext(RaceHandler* handler);
-        virtual vector<Team*> race(string raceDay);
+        virtual std::vector<Team*> race(std::string raceDay);
     private:
         RaceHandler* next;
     protected:
         void runRace();
-        Race * event;
+        std::vector<Team*> positions;
+        RaceTrack* track;
 };
 
 #endif // RACEHANDLER_H

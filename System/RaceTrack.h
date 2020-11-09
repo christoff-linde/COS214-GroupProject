@@ -11,8 +11,10 @@
  
 #if !defined(RACETRACK_H)
 #define RACETRACK_H
-#include "RaceTrack.h"
-
+#include<vector>
+#include "Team.h"
+#include <vector>
+#include <string>
 class RaceTrack{
     public:
         RaceTrack(int laps, int turns, float length, int straight);
@@ -20,14 +22,14 @@ class RaceTrack{
         int getNumTurns();
         float getTotalLength();
         int getLongestStraight();
-        vector<Team*> getGridOrder();
-        void setGridOrder(vector<Team*>);
+        std::vector<Team*> getGridOrder();
+        void setGridOrder(std::vector<Team*> grid) ;
     private:
         int numLaps;
         int turns;
         float length;
         int longest;
-        vector<Team*> gridOrder;
+        std::vector<Team*> gridOrder;
 };
 
 #endif

@@ -1,40 +1,72 @@
-#include "EngineeringTeam.h"
-#include "Aggressive.h"
-#include "LaidBack.h"
-#include "Neutral.h"
-#include "EngineTeam.h"
-#include "ChassisTeam.h"
-#include "ElectronicsTeam.h"
-#include "AerodynamicsTeam.h"
-#include "EngineeringStore.h"
+#include "Race.h"
 #include <vector>
-#include <iterator>
+#include<iostream>
+using namespace std;
 int main()
 {
-    // take in a strategy pointer 
-    EngineeringStore* engineerStorage = new EngineeringStore;
-    RacingStrategy* aggressive = new Aggressive();
-    EngineeringTeam **currentYear = new EngineeringTeam *[4]; //array of engineeringteam pointers to store the factories
-    vector <CarPart*> partsList;
-    //initialising all the factories
-    currentYear[0] = new EngineTeam(aggressive);
-    currentYear[1] = new ChassisTeam(aggressive);
-    currentYear[2] = new ElectronicsTeam(aggressive);
-    currentYear[3] = new AerodynamicsTeam(aggressive);
 
-    
+    RaceTrack* track1 = new RaceTrack(20,4,3.0,3);
+    RaceTrack* track2 = new RaceTrack(20,4,3.0,3);
+    RaceTrack* track3 = new RaceTrack(20,4,3.0,3);
+    RaceTrack* track4 = new RaceTrack(20,4,3.0,3);
+    RaceTrack* track5 = new RaceTrack(20,4,3.0,3);
 
-    for (int i = 0; i < 4; i++)
-    {
-        partsList.push_back(currentYear[i]->createCarPart()); //adding the parts to the partslist 
-        engineerStorage->addToList(currentYear[i]->createCarPart());
+
+    Race* race1 = new Race("Barcelona", "18 Feb", track1);
+    Race* race2 = new Race("Barcelona", "18 Feb", track1);
+    Race* race3 = new Race("France", "18 Feb", track2);
+    Race* race4 = new Race("Italy", "18 Feb", track3);
+    Race* race5 = new Race("Spain", "18 Feb", track4);
+    Race* race6 = new Race("Zimbabwe", "18 Feb", track5);
+
+
+    std::vector<Race*> racelist;
+    racelist.push_back(race1);
+    racelist.push_back(race2);
+    racelist.push_back(race3);
+    racelist.push_back(race4);
+    racelist.push_back(race5);
+    racelist.push_back(race6);
+
+
+    Team* team1 = new Team();
+    Team* team2 = new Team();
+    Team* team3 = new Team();
+    Team* team4 = new Team();
+    Team* team5 = new Team();
+    Team* team6 = new Team();
+    Team* team7 = new Team();
+    Team* team8 = new Team();
+    Team* team9 = new Team();
+    Team* team10 = new Team();
+
+
+    std::vector<Team*> teamlist;
+    teamlist.push_back(team1);
+    teamlist.push_back(team2);
+    teamlist.push_back(team3);
+    teamlist.push_back(team4);
+    teamlist.push_back(team5);
+    teamlist.push_back(team6);
+    teamlist.push_back(team7);
+    teamlist.push_back(team8);
+    teamlist.push_back(team9);
+    teamlist.push_back(team10);
+
+
+
+    for(auto race : racelist){
+        race->RegisterTeams(teamlist);
     }
 
+    race1->runRaces();
+    
+    
 
-RaceCar* currentCar = new RaceCar(partsList);
-cout<<currentCar->getEngine()->getName()<<endl;
-
-cout<<engineerStorage->getEngine()->getName()<<endl;
+    cout<< race1->getPoints(team5)<<endl;
+    int size = race1->getPositions().size();
+    cout<<race1->getPositions()<<endl;
+    
 
     return 0;
 }
