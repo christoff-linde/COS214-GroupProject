@@ -14,7 +14,7 @@ void ElectronicsSimulationAdapter::calculateLevel(){
 
 	l *= part->getAccSpeed()/1000;
 
-	l *= 1/part->getGearChangeSpeed();
+	l += (1000-part->getGearChangeSpeed());
 
 	setLevel(l);
 }
