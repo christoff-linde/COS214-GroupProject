@@ -10,7 +10,7 @@ ElectronicsSimulationAdapter::~ElectronicsSimulationAdapter(){
 }
 
 void ElectronicsSimulationAdapter::calculateLevel(){
-	int l = part->getPowerOutput();
+	double l = part->getPowerOutput();
 
 	l *= part->getAccSpeed()/1000;
 

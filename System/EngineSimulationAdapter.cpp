@@ -10,7 +10,7 @@ EngineSimulationAdapter::~EngineSimulationAdapter(){
 }
 
 void EngineSimulationAdapter::calculateLevel(){
-	int l = part->getHorsePower()/100;
+	double l = part->getHorsePower()/100;
 
 	l *= part->getAirChargeRatio();
 

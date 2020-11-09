@@ -8,11 +8,11 @@ VirtualCarPart::~VirtualCarPart(){
 
 }
 
-int VirtualCarPart::getLevel(){
+double VirtualCarPart::getLevel(){
 	return level;
 }
 
-void VirtualCarPart::setLevel(int l){
+void VirtualCarPart::setLevel(double l){
 	level = l;
 }
 

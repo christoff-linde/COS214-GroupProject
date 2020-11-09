@@ -10,7 +10,7 @@ AerodynamicsSimulationAdapter::~AerodynamicsSimulationAdapter(){
 }
 
 void AerodynamicsSimulationAdapter::calculateLevel(){
-	int l = 0;
+	double l = 0;
 
 	double widthCalc = 1 / (part->getFrontWingWidth() - part->getBackWingWidth());
 

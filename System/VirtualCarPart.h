@@ -21,22 +21,18 @@ class VirtualCarPart
 	public:
 		/**
        	 * @brief Construct a Virtual Car Part
-         * 
-         * @param part 
          */
 		VirtualCarPart();
 		/**
        	 * @brief Destroy the Virtual Car Part
-         * 
-         * @param part 
          */
 		virtual ~VirtualCarPart();
 		/**
          * @brief Get the level
          * 
-         * @return int 
+         * @return double 
          */
-		virtual int getLevel();
+		virtual double getLevel();
 		/**
          * @brief Set the name
          * 
@@ -56,11 +52,11 @@ class VirtualCarPart
          * 
          * @param l
          */
-		void setLevel(int l);
+		void setLevel(double l);
 
 	private:
 
-		int level;
+		double level;
 		string name;
 
 };
