@@ -17,7 +17,7 @@ RaceTrack* RaceTrackSimulationAdapter::getRaceTrack(){
 }
 
 double RaceTrackSimulationAdapter::getScore(){
-	return score;
+	return VirtualRaceTrack::getScore();
 }
 
 double RaceTrackSimulationAdapter::getTotalLength(){

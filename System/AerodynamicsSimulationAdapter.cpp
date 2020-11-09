@@ -25,7 +25,7 @@ void AerodynamicsSimulationAdapter::calculateLevel(){
 
 	l = widthCalc * 1/df;
 
-	l *= 1/part->getCfDrag();
+	l *= 1/part->getCFDrag();
 
 	setLevel(l);
 }

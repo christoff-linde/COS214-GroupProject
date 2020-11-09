@@ -12,7 +12,7 @@ ChassisSimulationAdapter::~ChassisSimulationAdapter(){
 void ChassisSimulationAdapter::calculateLevel(){
 	double l = part->getTorque();
 
-	l *= part->getPoissonRatio();
+	l *= part->getPoissionRatio();
 
 	setLevel(l);
 }

@@ -16,7 +16,7 @@ void VirtualRaceTrack::setScore(double s){
 	score = s;
 }
 
-double VirtualRaceTrack::getLength(){
+double VirtualRaceTrack::getTotalLength(){
 	return length;
 }
 
@@ -24,6 +24,6 @@ int VirtualRaceTrack::getTurns(){
 	return turns;
 }
 
-double VirtualRaceTrack::getlongestStraight(){
+double VirtualRaceTrack::getLongestStraight(){
 	return longestStraight;
 }
