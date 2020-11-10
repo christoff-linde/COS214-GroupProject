@@ -101,7 +101,6 @@ void Race::runRaces() {
 
     for (const std::string& day : weekend) {
         setPositions(raceWeekend->race(day));
-
     }
 
     delete final;

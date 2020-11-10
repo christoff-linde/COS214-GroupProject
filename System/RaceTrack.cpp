@@ -1,32 +1,32 @@
 #include"RaceTrack.h"
-#include<vector>
+#include <vector>
 
-RaceTrack::RaceTrack(int laps, int turns, float length, int straight){
+RaceTrack::RaceTrack(int laps, int turns, float length, int straight) {
     this->numLaps = laps;
     this->turns = turns;
     this->length = length;
     this->longest = straight;
 }
-int RaceTrack::getNumLaps(){
+int RaceTrack::getNumLaps() {
     return numLaps;
 }
 
-int RaceTrack::getNumTurns(){
+int RaceTrack::getNumTurns() {
     return turns;
 }
 
-float RaceTrack::getTotalLength(){
+float RaceTrack::getTotalLength() {
     return length;
 }
 
-int RaceTrack::getLongestStraight(){
+int RaceTrack::getLongestStraight() {
     return longest;
 }
 
-std::vector<Team*> RaceTrack::getGridOrder(){
+std::vector<Team*> RaceTrack::getGridOrder() {
     return gridOrder;
 }
 
-void RaceTrack::setGridOrder(std::vector<Team*> grid){
+void RaceTrack::setGridOrder(std::vector<Team*> grid) {
     gridOrder = grid;
 }
