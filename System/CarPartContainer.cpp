@@ -28,3 +28,8 @@ void CarPartContainer::addToInventory(std::vector<CarPart*> _carPartsList)
     for (auto&& part : _carPartsList)
         this->inventory.push_back(part);
 }
+
+void CarPartContainer::setModeOfTransport(Transport* _modeOfTransport)
+{
+    this->ModeOfTransport = _modeOfTransport;
+}

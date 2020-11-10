@@ -27,7 +27,7 @@ public:
         int change();
         void doTest(RaceCar* car); // do car test
         void doTest(CarPart* part); // do part test
-        void setState(Testing* state);
+        void setState(Testing* _state);
 };
 
 #endif

@@ -35,7 +35,11 @@ using namespace std;
          * 
          */
             RaceCar();
-
+        /**
+         * @brief Destroy the Race Car object
+         * 
+         */
+            ~RaceCar();
         /**
          * @brief Get the Engine object
          * 
@@ -64,11 +68,7 @@ using namespace std;
          */
             ElectronicsProduct* getElectronics();
 
-        /**
-         * @brief Destroy the Race Car object
-         * 
-         */
-            ~RaceCar();
+        
             
 
         private:

@@ -3,13 +3,13 @@
 #include<string>
 using namespace std;
 
-PracticeHandler::PracticeHandler(std::vector<Team*> pos, RaceTrack* tk) {
+PracticeHandler::PracticeHandler(std::vector<Team*> pos, RaceTrack* tk){
     positions = pos;
     track = tk;
 }
 
-vector<Team*> PracticeHandler::race(std::string raceDay) {
-    if (raceDay == "practice") {
+vector<Team*> PracticeHandler::race(std::string raceDay){
+    if(raceDay == "practice"){
         runRace();
         return positions;
     }
@@ -17,5 +17,5 @@ vector<Team*> PracticeHandler::race(std::string raceDay) {
     {
         return RaceHandler::race(raceDay);
     }
-
+    
 }

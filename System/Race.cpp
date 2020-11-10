@@ -1,6 +1,7 @@
 #include "Race.h"
 #include <vector>
 #include<iostream>
+#include <string>
 using namespace std;
 
 Race::Race(std::string loc, std::string dat, RaceTrack* racetrack) {
@@ -85,8 +86,12 @@ int Race::getPoints(Team* team) {
 
 void Race::runRaces() {
     RaceHandler* raceWeekend = new RaceHandler;
-    std::vector<std::string> weekend = { "practice", "practice", "qualifying", "final" };
-    std::vector<Team*> pos = positions;
+    vector<string> weekend;
+    weekend.push_back("practice");
+    weekend.push_back("practice");
+    weekend.push_back("qualifying");
+    weekend.push_back("final");
+    vector<Team*> pos = positions;
     RaceTrack* tk = track;
     PracticeHandler* practice = new PracticeHandler(pos, tk);
     QualifyingHandler* qualifier = new QualifyingHandler(pos, tk);
@@ -103,4 +108,9 @@ void Race::runRaces() {
     delete qualifier;
     delete practice;
     delete raceWeekend;
+}
+
+bool Race::getIsLocal()
+{
+    return isLocal;
 }

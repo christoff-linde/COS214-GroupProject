@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2020
  *
  */
-
+ 
 #if !defined(RACEHANDLER_H)
 #define RACEHANDLER_H
 
@@ -19,15 +19,15 @@ class Race;
 
 class RaceHandler
 {
-public:
-    RaceHandler* setNext(RaceHandler* handler);
-    virtual std::vector<Team*> race(std::string raceDay);
-private:
-    RaceHandler* next;
-protected:
-    void runRace();
-    std::vector<Team*> positions;
-    RaceTrack* track;
+    public:
+        RaceHandler* setNext(RaceHandler* handler);
+        virtual std::vector<Team*> race(std::string raceDay);
+    private:
+        RaceHandler* next;
+    protected:
+        void runRace();
+        std::vector<Team*> positions;
+        RaceTrack* track;
 };
 
 #endif // RACEHANDLER_H

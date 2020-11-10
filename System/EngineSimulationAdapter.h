@@ -40,6 +40,7 @@ class EngineSimulationAdapter : public VirtualCarPart
          * 
          * @param part 
          */
+
 		void setCarPart(EngineProduct* part);
 		/**
          * @brief Get the CarPart object
@@ -47,6 +48,7 @@ class EngineSimulationAdapter : public VirtualCarPart
          * @return EngineProduct* 
          */
 		EngineProduct* getCarPart();
+        
 
 	private:
 

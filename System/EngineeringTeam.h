@@ -13,7 +13,6 @@
 #include <iostream>
 #include <cstring>
 #include <string>
-//#include "Engineering.h"
 #include "CarPart.h"
 #include "RacingStrategy.h"
 #include "EngineProduct.h"
@@ -71,13 +70,7 @@ using namespace std;
          */
             RacingStrategy* getStrategy();
 
-        /**
-         * @brief Get the Parts List object
-         * 
-         * @return list <CarPart*> 
-         */
-            list <CarPart*> getPartsList();
-  
+    
          private:
          /**
           * @brief The strategy that's used to construct different parts

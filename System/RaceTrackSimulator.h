@@ -32,6 +32,18 @@ class RaceTrackSimulator : public Simulator
          * @param subject
          */
 		void setSubject(VirtualRaceTrack* subject);
+        /**
+         * @brief Set the subject object
+         * 
+         * @param subject
+         */
+		void setSubject(VirtualCarPart* subject);
+          /**
+         * @brief Set the subject object
+         * 
+         * @param subject
+         */
+		void setSubject(VirtualRaceCar* subject);
 		/**
          * @brief Get the subject object
          * 

@@ -27,6 +27,8 @@ void CarSimulator::simulate(){
 void CarSimulator::setSubject(VirtualRaceCar* subject){
 	this->subject = subject;
 }
+void CarSimulator::setSubject(VirtualCarPart* subject){
+}
 
 VirtualRaceCar* CarSimulator::getSubject(){
 	return this->subject;

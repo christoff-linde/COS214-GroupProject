@@ -13,6 +13,7 @@ CarPartSimulator::~CarPartSimulator(){
 
 void CarPartSimulator::simulate(){
 	double score = subject->getLevel();
+	cout<<"yeeeeeeeeet"<<endl;
 	cout << "\033[4;37;42mPart simulation results:\033[0m" << endl;
 	cout << "\033[1;38;42mPart Type: \033[0m\033[38;42m" << subject->getName() << "\033[0m" << endl;
 
@@ -22,6 +23,8 @@ void CarPartSimulator::simulate(){
 
 void CarPartSimulator::setSubject(VirtualCarPart* subject){
 	this->subject = subject;
+}
+void CarPartSimulator::setSubject(VirtualRaceCar* subject){
 }
 
 VirtualCarPart* CarPartSimulator::getSubject(){

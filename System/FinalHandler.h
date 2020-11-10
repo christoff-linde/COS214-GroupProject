@@ -13,10 +13,10 @@
 #define FINALHANDLER_H
 #include <vector>
 #include <string>
-class FinalHandler : public RaceHandler {
-public:
-    FinalHandler(std::vector<Team*> pos, RaceTrack* tk);
-    std::vector<Team*> race(std::string raceDay) override;
+class FinalHandler: public RaceHandler{
+    public:
+        FinalHandler(std::vector<Team*> pos, RaceTrack* tk);
+        std::vector<Team*> race(std::string raceDay) override;
 };
 
 #endif

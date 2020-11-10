@@ -28,3 +28,4 @@ void EngineSimulationAdapter::setCarPart(EngineProduct* part){
 EngineProduct* EngineSimulationAdapter::getCarPart(){
 	return part;
 }
+

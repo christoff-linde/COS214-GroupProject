@@ -2,6 +2,7 @@
 
 VirtualCarPart::VirtualCarPart(string name){
 	this->name = name;
+	level =0;
 }
 
 VirtualCarPart::~VirtualCarPart(){

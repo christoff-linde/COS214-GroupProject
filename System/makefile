@@ -1,23 +1,27 @@
-main: main.o RacingStrategy.o Aggressive.o LaidBack.o Neutral.o
-	g++ -o main main.o RacingStrategy.o Aggressive.o LaidBack.o Neutral.o
-	
-main.o: main.cpp RacingStrategy.h Aggressive.h LaidBack.h Neutral.h
-	g++ -c main.cpp
+PRODUCT := main
 
-RacingStrategy.o: RacingStrategy.h RacingStrategy.cpp
-	g++ -c RacingStrategy.cpp
+CXX := g++
+LINKER := g++
+INCDIRS := -I.
+CXXFLAGS := -Wall -Wextra
 
-Aggressive.o: Aggressive.h Aggressive.cpp
-	g++ -c Aggressive.cpp
+SRCFILES := $(wildcard *.cpp) 
+OBJFILES := $(patsubst %.cpp,%.o,$(SRCFILES))
+DEPFILES := $(patsubst %.cpp,%.d,$(SRCFILES))
 
-LaidBack.o: LaidBack.h LaidBack.cpp
-	g++ -c LaidBack.cpp
+$(PRODUCT): $(OBJFILES)
+	$(LINKER) $^ -o $@
 
-Neutral.o: Neutral.h Neutral.cpp
-	g++ -c Neutral.cpp
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) $(INCDIRS) -c $< -o $@
 
-run:
-	./main
-	
+%.d: %.cpp
+	$(CXX) $(INCDIRS) -MM $< > $@
+
+-include $(DEPFILES)
+
 clean:
-	rm *.o main
+	rm -f $(OBJFILES) $(PRODUCT)
+	
+run: ./$(PRODUCT)
+	./$(PRODUCT)

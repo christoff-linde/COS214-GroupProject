@@ -36,6 +36,13 @@ public:
     */
   void createInventory();
 
+  /**
+   * @brief Set the Mode Of Transport object
+   *
+   * @param _modeOfTransport pointer to of transport
+   */
+  void setModeOfTransport(Transport* _modeOfTransport);
+
 private:
   EquipmentComposite* inventory; /** holds an EquipmentComposite as inventory */
 };

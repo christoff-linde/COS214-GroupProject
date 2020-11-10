@@ -2,7 +2,7 @@
 #include "Inactive.h"
 
 Components::Components() {
-    state = new Inactive();
+	state = new Inactive();
 }
 Components::~Components() {
 
@@ -12,13 +12,16 @@ int Components::change() {
     return 0;
 }
 void Components::doTest(RaceCar* car) {
+
     state->doTest(car);
 }
 void Components::doTest(CarPart* part) {
+   
     state->doTest(part);
 }
 
-void Components::setState(Testing* state) {
+void Components::setState(Testing* _state) {
     delete state;
-    this->state = state;
+    state = nullptr;
+    this->state = _state;
 }

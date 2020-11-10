@@ -1,110 +1,100 @@
 /**
  * @file EngineeringStore.h
- * @author Werner Graaff (u18050362@tuks.co.za) & Christoff Linde
- * @brief Serves as the Publisher in the Observer Pattern. EngineerStore is used to store CarParts manufactured by the EngineeringTeam
+ * @author Werner Graaff (u18050362@tuks.co.za)
+ * @brief 
  * @version 0.1
  * @date 2020-11-09
- *
+ * 
  * @copyright Copyright (c) 2020
- *
+ * 
  */
-
-class Race;
-
+#ifndef EngineeringStore_H
+#define EngineeringStore_H
 #include <iostream>
 #include <cstring>
 #include <string>
 #include <vector>
 #include <iterator>
-#include "Race.h"
 #include "CarPart.h"
 #include "EngineeringTeam.h"
-#include "Subscriber.h"
-
-#ifndef EngineeringStore_H
-#define EngineeringStore_H
-
 using namespace std;
+    
+    class EngineeringStore {
+        
+        public:
+         /**
+          * @brief Construct a new Engineering Store object
+          * 
+          */
+            EngineeringStore();
 
-class EngineeringStore {
-public:
-  /**
-   * @brief Construct a new Engineering Store object
-   *
-   */
-  EngineeringStore();
+        /**
+         * @brief Get the Engine object
+         * 
+         * @return EngineProduct* 
+         */
+            EngineProduct* getEngine();
 
-  /**
-   * @brief Destroy the Engineering Store object
-   *
-   */
-  ~EngineeringStore();
+        /**
+         * @brief Get the Chassis object
+         * 
+         * @return ChassisProduct* 
+         */
+            ChassisProduct* getChassis();
 
-  /**
-    * @brief Add a CarPart object to the vector of CarParts
-    *
-    */
-  void addToList(CarPart*);
-  /**
-   * @brief Get the Strategy List object
-   *
-   * @param strategy
-   * @return vector <CarPart*>
-   */
-  vector <CarPart*> getStrategyList(string strategy);
+        /**
+         * @brief Get the Aerodynamics object
+         * 
+         * @return AerodynamicsProduct* 
+         */
+            AerodynamicsProduct* getAerodynamics();
 
-  /**
-   * @brief Get the Parts List object
-   *
-   * @return vector <CarPart*>
-   */
-  vector <CarPart*> getPartsList();
+        /**
+         * @brief Get the Electronics object
+         * 
+         * @return ElectronicsProduct* 
+         */
+            ElectronicsProduct* getElectronics();
 
-  /**
-   * @brief Get the Engine object
-   *
-   * @return EngineProduct* pointer to EngineProduct
-   */
-  EngineProduct* getEngine();
+        /**
+         * @brief Destroy the Engineering Store object
+         * 
+         */
+            ~EngineeringStore();
 
-  /**
-   * @brief Get the Chassis object
-   *
-   * @return ChassisProduct* pointer to ChassisProduct
-   */
-  ChassisProduct* getChassis();
+        /**
+         * @brief Add a CarPart object to the vector of CarParts
+         * 
+         */
+            void addToList(CarPart*);
+        /**
+         * @brief Get the Strategy List object
+         * 
+         * @param strategy 
+         * @return vector <CarPart*> 
+         */
+            vector <CarPart*> getStrategyList(string strategy);
 
-  /**
-   * @brief Get the Aerodynamics object
-   *
-   * @return AerodynamicsProduct* pointer to AerodynamicsProduct
-   */
-  AerodynamicsProduct* getAerodynamics();
+        /**
+         * @brief Get the Parts List object
+         * 
+         * @return vector <CarPart*> 
+         */
+            vector <CarPart*> getPartsList();
 
-  /**
-   * @brief Get the Electronics object
-   *
-   * @return ElectronicsProduct* pointer to ElectronicsProduct
-   */
-  ElectronicsProduct* getElectronics();
+        private:
+        /**
+         * @brief A vector of CarParts
+         * 
+         */
+        vector <CarPart*> partsList;
+      
 
-  /**
-   * @brief subscribes a subscriber participant to the subscriberList of the Publisher
-   *
-   * @param _subscriber pointer to the Subscriber to be added
-   */
-  void subscribe(Subscriber* _subscriber);
+          
 
-  /**
-   * @brief call each the update() method for each Subscriber
-   *
-   * @param _race pointer to the Race that a Shipment needs to be prepared for
-   */
-  void notifySubscribers(Race* _race);
+            
+    };
 
-private:
-  std::vector<CarPart*> partsList; /** holds CarPart* for the partsList (i.e. the CarParts stored in the EngineerStore) */
-  vector<Subscriber*> subscriberList; /** holds Subscriber* to Subscriber participants */
-};
-
+    
+    
 #endif
