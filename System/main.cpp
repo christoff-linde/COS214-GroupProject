@@ -36,18 +36,25 @@ int main()
     engineerStorage->addToList(currentYear[i]->createCarPart());
   }
 
+
   RaceCar* currentCar = new RaceCar(engineerStorage->getStrategyList("Aggressive"));
   cout << currentCar->getEngine()->getName() << endl;
+
   cout << engineerStorage->getEngine()->getName() << endl;
 
   //TESTING
-  // Components* component = new Components();
-  // component->setState(new CsSimulation());
-  // cout<<"haha yes"<<endl;
-  // component->doTest(engineerStorage->getEngine());
-  // component->doTest(currentCar);
-  // component->doTest(chas);
-  // component->doTest(ele);
+
+     // Components* component = new Components();
+     // component->setState(new CsSimulation());
+      //cout<<"haha yes"<<endl;
+     //component->doTest(engineerStorage->getEngine());
+      //component->doTest(currentCar);
+   //   component->doTest(chas);
+    //  component->doTest(ele);
+
+
+  //end testing
+
 
   //SIMULATOR
 
@@ -55,15 +62,23 @@ int main()
   VirtualCarPart* vEngine = new EngineSimulationAdapter(engineerStorage->getEngine());
 
   testSim1->setSubject(vEngine);
+
   testSim1->runSimulator();
   cout << "The result was: " << testSim1->getResult() << endl;
   //end simulator
+
+
+
+
+
+
 
   RaceTrack* track1 = new RaceTrack(20, 4, 3.0, 3);
   RaceTrack* track2 = new RaceTrack(20, 4, 3.0, 3);
   RaceTrack* track3 = new RaceTrack(20, 4, 3.0, 3);
   RaceTrack* track4 = new RaceTrack(20, 4, 3.0, 3);
   RaceTrack* track5 = new RaceTrack(20, 4, 3.0, 3);
+
 
   Race* race1 = new Race("Barcelona", "18 Feb", track1);
   Race* race2 = new Race("Barcelona", "18 Feb", track1);
@@ -91,6 +106,7 @@ int main()
   Team* team9 = new Team();
   Team* team10 = new Team();
 
+
   std::vector<Team*> teamlist;
   teamlist.push_back(team1);
   teamlist.push_back(team2);
@@ -103,28 +119,16 @@ int main()
   teamlist.push_back(team9);
   teamlist.push_back(team10);
 
+
+
   for (auto race : racelist) {
     race->RegisterTeams(teamlist);
   }
 
-  for (auto&& team : teamlist)
-  {
-    std::cout << team->getTeamName() << std::endl;
-  }
+  race1->runRaces();
 
-
-  // race1->runRaces();
-
-  for (auto&& race : racelist)
-  {
-    race->runRaces();
-    cout << race->getPoints(team5) << endl;
-    int size = race->getPositions().size();
-  }
-
-
-  // cout << race1->getPoints(team5) << endl;
-  // int size = race1->getPositions().size();
+  cout << race1->getPoints(team5) << endl;
+  int size = race1->getPositions().size();
   cout << "lol" << endl;
 
   return 0;
