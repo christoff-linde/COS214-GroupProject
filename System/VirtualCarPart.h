@@ -32,7 +32,7 @@ class VirtualCarPart
          * 
          * @return double 
          */
-		virtual double getLevel();
+		double getLevel();
 		/**
          * @brief Set the name
          * 

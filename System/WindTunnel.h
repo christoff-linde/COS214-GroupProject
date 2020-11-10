@@ -13,9 +13,10 @@
 
 #include <iostream>
 #include "Testing.h"
+#include "AerodynamicsProduct.h"
 using namespace std;
 
-class WindTunnel
+class WindTunnel: public Testing
 {
 
     private:

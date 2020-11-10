@@ -1,102 +1,104 @@
 #include "EngineeringStore.h"
-#include "Race.h"
 
 EngineeringStore::EngineeringStore()
-{}
+{
+
+}
 
 EngineeringStore::~EngineeringStore()
 {
-   for (auto&& part : partsList)
-      delete part;
-
-   for (auto&& subscriber : subscriberList)
-      delete subscriber;
+   for(int i=0; i< this->partsList.size(); ++i)
+   {
+      delete partsList[i];
+   }
+   partsList.clear();
 }
 
 void EngineeringStore::addToList(CarPart* carPart)
 {
-   this->partsList.push_back(carPart);
+    this->partsList.push_back(carPart); 
 }
 
-vector<CarPart*> EngineeringStore::getPartsList()
+vector <CarPart*> EngineeringStore::getPartsList()
 {
-   return this->partsList;
-}
-
-vector<CarPart*> EngineeringStore::getStrategyList(string strategy)
-{
-   vector <CarPart*> strategyList;
-   vector <CarPart*> ::iterator it;
-   for (it = partsList.begin(); it != partsList.end(); ++it)
-   {
-      if ((*it)->getName().find("Engine") != string::npos && (*it)->getName().find(strategy) != string::npos)
-      {
-         strategyList.push_back(*it);
-      }
-      else if ((*it)->getName().find("Chassis") != string::npos && (*it)->getName().find(strategy) != string::npos)
-      {
-         strategyList.push_back(*it);
-      }
-      else if ((*it)->getName().find("Electronics") != string::npos && (*it)->getName().find(strategy) != string::npos)
-      {
-         strategyList.push_back(*it);
-      }
-      else if ((*it)->getName().find("Aerodynamics") != string::npos && (*it)->getName().find(strategy) != string::npos)
-      {
-         strategyList.push_back(*it);
-      }
-   }
-
-   return strategyList;
+    return this->partsList;
 }
 
 EngineProduct* EngineeringStore::getEngine()
 {
-   vector <CarPart*> ::iterator it;
-   for (it = partsList.begin(); it != partsList.end(); ++it)
-   {
-      if ((*it)->getName().find("Engine") != string::npos)
-         return dynamic_cast<EngineProduct*>(*it);
-   }
+     vector <CarPart*> :: iterator it;
+     for(it = partsList.begin(); it != partsList.end(); ++it)
+     {
+         if((*it)->getName().find("Engine") != string::npos)
+         {
+            return dynamic_cast<EngineProduct*>(*it);
+         }
+    
+     }
+}
+
+vector <CarPart*> EngineeringStore::getStrategyList(string strategy)
+{
+    vector <CarPart*> strategyList;
+   vector <CarPart*> :: iterator it;
+     for(it = partsList.begin(); it != partsList.end(); ++it)
+     {
+       if((*it)->getName().find("Engine") != string::npos && (*it)->getName().find(strategy) != string::npos)
+         {
+            strategyList.push_back(*it);
+         }
+         else if((*it)->getName().find("Chassis") != string::npos && (*it)->getName().find(strategy) != string::npos)
+         {
+            strategyList.push_back(*it);
+         }
+         else if((*it)->getName().find("Electronics") != string::npos && (*it)->getName().find(strategy) != string::npos)
+         {
+            strategyList.push_back(*it);
+         }
+         else if((*it)->getName().find("Aerodynamics") != string::npos && (*it)->getName().find(strategy) != string::npos)
+         {
+            strategyList.push_back(*it);
+         }
+        
+     } 
+     return strategyList;
 }
 
 ChassisProduct* EngineeringStore::getChassis()
 {
-   vector <CarPart*> ::iterator it;
-   for (it = partsList.begin(); it != partsList.end(); ++it)
-   {
-      if ((*it)->getName().find("Chassis") != string::npos)
-         return dynamic_cast<ChassisProduct*>(*it);
-   }
+      vector <CarPart*> :: iterator it;
+     for(it = partsList.begin(); it != partsList.end(); ++it)
+     {
+       if((*it)->getName().find("Chassis") != string::npos)
+         {
+            return dynamic_cast<ChassisProduct*>(*it);
+         }
+        
+     }
 }
 
 AerodynamicsProduct* EngineeringStore::getAerodynamics()
 {
-   vector <CarPart*> ::iterator it;
-   for (it = partsList.begin(); it != partsList.end(); ++it)
-   {
-      if ((*it)->getName().find("Electronics") != string::npos)
-         return dynamic_cast<AerodynamicsProduct*>(*it);
-   }
+      vector <CarPart*> :: iterator it;
+     for(it = partsList.begin(); it != partsList.end(); ++it)
+     {
+      
+         if((*it)->getName().find("Electronics") != string::npos)
+         {
+            return dynamic_cast<AerodynamicsProduct*>(*it); 
+         }
+    
+     }
 }
 
 ElectronicsProduct* EngineeringStore::getElectronics()
 {
-   vector <CarPart*> ::iterator it;
-   for (it = partsList.begin(); it != partsList.end(); ++it)
-   {
-      if ((*it)->getName().find("Aerodynamics") != string::npos)
-         return dynamic_cast<ElectronicsProduct*>(*it);
-   }
-}
-
-void EngineeringStore::subscribe(Subscriber* _subscriber)
-{
-   this->subscriberList.push_back(_subscriber);
-}
-
-void EngineeringStore::notifySubscribers(Race* _race)
-{
-   for (auto&& subscriber : subscriberList)
-      subscriber->update(this->partsList, this->getStrategyList(), _race);
+      vector <CarPart*> :: iterator it;
+     for(it = partsList.begin(); it != partsList.end(); ++it)
+     {
+         if((*it)->getName().find("Aerodynamics") != string::npos)
+         {
+            return dynamic_cast<ElectronicsProduct*>(*it);
+         }
+     }
 }

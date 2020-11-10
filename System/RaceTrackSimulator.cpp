@@ -29,6 +29,13 @@ void RaceTrackSimulator::simulate(){
 void RaceTrackSimulator::setSubject(VirtualRaceTrack* subject){
 	this->subject = subject;
 }
+void RaceTrackSimulator::setSubject(VirtualRaceCar* subject){
+
+}
+void RaceTrackSimulator::setSubject(VirtualCarPart* subject){
+	
+}
+
 
 VirtualRaceTrack* RaceTrackSimulator::getSubject(){
 	return this->subject;

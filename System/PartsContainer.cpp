@@ -19,14 +19,14 @@ PartsContainer::~PartsContainer()
 
 void PartsContainer::checkInventory()
 {
-    if (this->inventory.empty())
-        std::cout << "Inventory Empty" << std::endl;
-    else
-    {
-        std::cout << "PartsContainer Inventory:" << std::endl;
-        for (auto&& part : inventory)
-            part->print();
-    }
+    // if (this->inventory.empty())
+    //     std::cout << "Inventory Empty" << std::endl;
+    // else
+    // {
+    //     std::cout << "PartsContainer Inventory:" << std::endl;
+    //     for (auto&& part : inventory)
+    //         part->print();
+    // }
 }
 
 void PartsContainer::clearInventory()
@@ -36,5 +36,5 @@ void PartsContainer::clearInventory()
 
 void PartsContainer::addToInventory(CarPart* _part)
 {
-    this.inventory.push_back(_part);
+    this->inventory.push_back(_part);
 }

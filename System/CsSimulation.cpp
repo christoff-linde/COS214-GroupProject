@@ -1,17 +1,21 @@
-using namespace std;
 #include "CsSimulation.h"
 #include "Simulator.h"
 #include "CarSimulator.h"
 #include "CarPartSimulator.h"
 #include "VirtualCarPart.h"
+#include "CarSimulationAdapter.h"
 #include "ChassisSimulationAdapter.h"
 #include "AerodynamicsSimulationAdapter.h"
 #include "EngineSimulationAdapter.h"
 #include "ElectronicsSimulationAdapter.h"
+#include "Inactive.h"
 #include "typeinfo"
 #include <string>
-CsSimulation::CsSimulation(){
 
+using namespace std;
+
+CsSimulation::CsSimulation(){
+    cout<<"creating object"<<endl;
 }
 CsSimulation::~CsSimulation(){
 
@@ -23,7 +27,6 @@ void CsSimulation::handleChange(Components* c){
 void CsSimulation::doTest(RaceCar* car){
     // Create simulator
     Simulator* CarSim = new CarSimulator();
-
     // Create adapter for given car
     VirtualRaceCar* CarAdapter = new CarSimulationAdapter(car);
 
@@ -46,19 +49,20 @@ void CsSimulation::doTest(CarPart* part){
     Simulator* PartSim = new CarPartSimulator();
 
     if(typeid(part) == typeid(testChassis)){
-        VirtualCarPart* ChassisAdapter = new ChassisSimulationAdapter(part);
+        VirtualCarPart* ChassisAdapter = new ChassisSimulationAdapter(dynamic_cast<ChassisProduct*>(part));
         PartSim->setSubject(ChassisAdapter);
     }else if(typeid(part) == typeid(testAero)){ 
-        VirtualCarPart* AerodynamicsAdapter = new AerodynamcsSimulationAdapter(part);
-        PartSim->setSubject(ChassisAdapter);
+        VirtualCarPart* AerodynamicsAdapter = new AerodynamicsSimulationAdapter(dynamic_cast<AerodynamicsProduct*>(part));
+        PartSim->setSubject(AerodynamicsAdapter);
     }else if(typeid(part) == typeid(testEngine)){
-        VirtualCarPart* EngineAdapter = new EngineSimulationAdapter(part);
-        PartSim->setSubject(ChassisAdapter);
+        VirtualCarPart* EngineAdapter = new EngineSimulationAdapter(dynamic_cast<EngineProduct*>(part));
+        PartSim->setSubject(EngineAdapter);
     }else if(typeid(part) == typeid(testElectric)){
-        VirtualCarPart* ElectronicsAdapter = new ElectronicsSimulationAdapter(part);
-        PartSim->setSubject(ChassisAdapter);
+        VirtualCarPart* ElectronicsAdapter = new ElectronicsSimulationAdapter(dynamic_cast<ElectronicsProduct*>(part));
+        PartSim->setSubject(ElectronicsAdapter);
     } 
 
+    cout<<"in cs simulations"<<endl;
     PartSim->runSimulator();
 
     // Can be used to retrieve the final value for comparison

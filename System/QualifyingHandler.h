@@ -15,10 +15,11 @@
 #include "RaceHandler.h"
 #include <vector>
 #include <string>
+using namespace std;
 class QualifyingHandler: public RaceHandler{
     public:
-        QualifyingHandler(std::vector<Team*> pos, RaceTrack* tk);
-        std::vector<Team*> race(std::string raceDay) override;
+        QualifyingHandler(vector<Team*> pos, RaceTrack* tk);
+        vector<Team*> race(string raceDay) override;
 };
 
 #endif

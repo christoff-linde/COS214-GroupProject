@@ -23,7 +23,7 @@ public:
      *
      * @param _modeOfTransport pointer to a Transport
      */
-    void setModeOfTransport(Transport* _modeOfTransport);
+    virtual void setModeOfTransport(Transport* _modeOfTransport) = 0;
 
     /**
      * @brief virtual method to populate the inventory of the derived containers

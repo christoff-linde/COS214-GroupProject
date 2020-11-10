@@ -60,3 +60,8 @@ void EquipmentContainer::createInventory()
     Radio* radio = new Radio();
     inventory->add(radio);
 }
+
+void EquipmentContainer::setModeOfTransport(Transport* _modeOfTransport)
+{
+    this->ModeOfTransport = _modeOfTransport;
+}

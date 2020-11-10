@@ -25,24 +25,5 @@ RacingStrategy* EngineeringTeam::getStrategy()
     return this->strategy;
 }
 
-list <CarPart*> EngineeringTeam::getPartsList()
-{
-    return this->partsList;
-}
 
-/*RaceCar* EngineeringTeam::assembleCar(list <CarPart*> partsList)
-{
-    RaceCar *newCar = new RaceCar(partsList);
-    this->raceCar = newCar;
-}
-
-void EngineeringTeam::setRaceCar(RaceCar* car)
-{
-    this->raceCar  = car;
-}
-
-RaceCar* EngineeringTeam::getRaceCar()
-{
-    return this->raceCar;
-}*/
 

@@ -33,6 +33,12 @@ class CarPartSimulator : public Simulator
          */
 		void setSubject(VirtualCarPart* subject);
 		/**
+         * @brief Set the subject of the simulator
+         * 
+         * @param subject
+         */
+		void setSubject(VirtualRaceCar* subject);
+		/**
          * @brief Get the subject of the simulator
          * 
          * @return VirtualCarPart* 

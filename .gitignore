@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
@@ -6,3 +7,12 @@
 /.vs
 .vscode
 System/Main.cpp
+=======
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+*.bak_001d
+/.vs
+.vscode
+>>>>>>> origin/master

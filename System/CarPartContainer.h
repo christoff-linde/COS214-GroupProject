@@ -43,6 +43,13 @@ public:
      */
     void addToInventory(std::vector<CarPart*> _carPartList);
 
+    /**
+     * @brief Set the Mode Of Transport object
+     *
+     * @param _modeOfTransport pointer to a Transport
+     */
+    void setModeOfTransport(Transport* _modeOfTransport);
+
 private:
     std::vector<CarPart*> inventory; /** holds CarPart* as inventor of the CarPartContainer */
 };

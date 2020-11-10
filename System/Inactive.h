@@ -15,7 +15,7 @@
 #include "Testing.h"
 using namespace std;
 
-class Inactive
+class Inactive: public Testing
 {
 
     private:

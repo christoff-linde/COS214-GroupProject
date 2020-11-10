@@ -49,8 +49,8 @@ class Simulator
          * 
          * @param subject
          */
-      virtual void setSubject(VirtualRaceCar* subject);
-      virtual void setSubject(VirtualCarPart* subject);
+      virtual void setSubject(VirtualRaceCar* subject)=0;
+      virtual void setSubject(VirtualCarPart* subject)=0;
 
 	protected:
 		/**
