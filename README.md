@@ -1,13 +1,5 @@
 # COS214-GroupProject {#mainpage}
 
-## Project Report (Google Docs)
-
-A digital copy of the included PDF [report](https://docs.google.com/document/d/10xRMw7jx-v39a0AKoW1tJiqRDaTlT49Ts2XGdcrZ1Ig/edit?usp=sharing) is available on Google Docs at: https://docs.google.com/document/d/10xRMw7jx-v39a0AKoW1tJiqRDaTlT49Ts2XGdcrZ1Ig/edit?usp=sharing
-
-## Documentation
-
-[Code documentation](https://schumys-vroomys.github.io/COS214-GroupProject/) is available at: https://schumys-vroomys.github.io/COS214-GroupProject/
-
 ## Group Members
 
 | Name                | Student Number | Section         |
@@ -42,3 +34,15 @@ make clean
 ```
 
 remove compiled object files and executable
+
+## Project Report (Google Docs)
+
+A digital copy of the included PDF report is available on Google Docs at: https://docs.google.com/document/d/10xRMw7jx-v39a0AKoW1tJiqRDaTlT49Ts2XGdcrZ1Ig/edit?usp=sharing
+
+## Documentation
+
+Code documentation is available at: https://schumys-vroomys.github.io/COS214-GroupProject/
+
+## Source Code
+
+Github: https://github.com/Schumys-Vroomys/COS214-GroupProject
