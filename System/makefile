@@ -21,7 +21,7 @@ $(PRODUCT): $(OBJFILES)
 -include $(DEPFILES)
 
 clean:
-	rm -f $(OBJFILES) $(PRODUCT)
+	rm -f $(OBJFILES) $(PRODUCT) $(DEPFILES)
 	
 run: ./$(PRODUCT)
 	./$(PRODUCT)
