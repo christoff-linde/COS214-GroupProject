@@ -1,0 +1,10 @@
+<map id="System/EquipmentContainer.h" name="System/EquipmentContainer.h">
+<area shape="rect" id="node1" title="Container for EquipmentComposite derived from Container." alt="" coords="48,5,244,32"/>
+<area shape="rect" id="node2" href="$Container_8h.html" title="Abstract Interface for a Container." alt="" coords="31,80,117,107"/>
+<area shape="rect" id="node6" href="$EquipmentComposite_8h.html" title="Composite Participant. EquipmentComposite is composed of Equipment Components." alt="" coords="142,80,297,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="117,155,175,181"/>
+<area shape="rect" id="node4" href="$Transport_8h.html" title="Abstract Interface for the Factory Method for Transport used by a Shipment." alt="" coords="5,155,92,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="76,229,131,256"/>
+<area shape="rect" id="node7" href="$Equipment_8h.html" title="Abstract class for Equipment." alt="" coords="199,155,293,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="210,229,282,256"/>
+</map>

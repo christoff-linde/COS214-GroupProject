@@ -1,0 +1,6 @@
+<map id="Container" name="Container">
+<area shape="rect" id="node1" title=" " alt="" coords="182,5,259,32"/>
+<area shape="rect" id="node2" href="$classCarPartContainer.html" title=" " alt="" coords="5,80,127,107"/>
+<area shape="rect" id="node3" href="$classEquipmentContainer.html" title=" " alt="" coords="151,80,290,107"/>
+<area shape="rect" id="node4" href="$classPartsContainer.html" title=" " alt="" coords="315,80,423,107"/>
+</map>

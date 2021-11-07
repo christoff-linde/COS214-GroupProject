@@ -1,0 +1,11 @@
+<map id="System/GarageEquipment.h" name="System/GarageEquipment.h">
+<area shape="rect" id="node1" title="Sub&#45;category of Equipment." alt="" coords="348,5,531,32"/>
+<area shape="rect" id="node2" href="$Computer_8h.html" title="Specific type of GarageEquipment." alt="" coords="138,80,274,107"/>
+<area shape="rect" id="node5" href="$FuelTank_8h.html" title="Specific type of GarageEquipment." alt="" coords="299,80,433,107"/>
+<area shape="rect" id="node7" href="$GarageEquipment_8cpp.html" title="Sub&#45;category of Equipment." alt="" coords="595,80,793,107"/>
+<area shape="rect" id="node8" href="$Radio_8h.html" title="Specific type of GarageEquipment." alt="" coords="457,80,571,107"/>
+<area shape="rect" id="node3" href="$Computer_8cpp.html" title="Implementation of Computer." alt="" coords="5,155,156,181"/>
+<area shape="rect" id="node4" href="$EquipmentContainer_8cpp.html" title="Container holding Equipment." alt="" coords="181,155,391,181"/>
+<area shape="rect" id="node6" href="$FuelTank_8cpp.html" title="Implementation of FuelTank." alt="" coords="415,155,563,181"/>
+<area shape="rect" id="node9" href="$Radio_8cpp.html" title="Specific type of GarageEquipment." alt="" coords="587,155,713,181"/>
+</map>

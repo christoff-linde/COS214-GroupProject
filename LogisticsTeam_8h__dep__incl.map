@@ -1,0 +1,4 @@
+<map id="System/LogisticsTeam.h" name="System/LogisticsTeam.h">
+<area shape="rect" id="node1" title="Concrete Subscriber in the Observer pattern. LogisticsTeam is responsible for creating Shipments." alt="" coords="12,5,179,32"/>
+<area shape="rect" id="node2" href="$LogisticsTeam_8cpp.html" title="Concrete Subscriber in the Observer pattern. LogisticsTeam is responsible for creating Shipments." alt="" coords="5,80,185,107"/>
+</map>

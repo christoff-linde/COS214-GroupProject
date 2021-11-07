@@ -1,0 +1,5 @@
+<map id="System/Computer.h" name="System/Computer.h">
+<area shape="rect" id="node1" title="Specific type of GarageEquipment." alt="" coords="115,5,251,32"/>
+<area shape="rect" id="node2" href="$Computer_8cpp.html" title="Implementation of Computer." alt="" coords="5,80,156,107"/>
+<area shape="rect" id="node3" href="$EquipmentContainer_8cpp.html" title="Container holding Equipment." alt="" coords="181,80,391,107"/>
+</map>

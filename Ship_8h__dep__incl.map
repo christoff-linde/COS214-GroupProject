@@ -1,0 +1,5 @@
+<map id="System/Ship.h" name="System/Ship.h">
+<area shape="rect" id="node1" title="ConcreteProduct participant. Ship method of Transport." alt="" coords="95,5,201,32"/>
+<area shape="rect" id="node2" href="$Ship_8cpp.html" title="Implementation of Ship." alt="" coords="5,80,125,107"/>
+<area shape="rect" id="node3" href="$ShipCreator_8cpp.html" title="Creator Participant creating a Ship." alt="" coords="149,80,312,107"/>
+</map>

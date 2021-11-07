@@ -1,0 +1,8 @@
+<map id="System/Refrigerator.cpp" name="System/Refrigerator.cpp">
+<area shape="rect" id="node1" title="Specific type of CateringEquipment." alt="" coords="5,5,167,32"/>
+<area shape="rect" id="node2" href="$Refrigerator_8h.html" title="Specific type of CateringEquipment." alt="" coords="37,80,135,107"/>
+<area shape="rect" id="node3" href="$CateringEquipment_8h.html" title="Sub&#45;category of Equipment." alt="" coords="15,155,157,181"/>
+<area shape="rect" id="node4" href="$Equipment_8h.html" title="Abstract class for Equipment." alt="" coords="39,229,133,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="6,304,78,331"/>
+<area shape="rect" id="node6" title=" " alt="" coords="103,304,157,331"/>
+</map>

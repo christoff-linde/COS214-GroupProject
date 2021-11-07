@@ -1,0 +1,6 @@
+<map id="System/ShipCreator.h" name="System/ShipCreator.h">
+<area shape="rect" id="node1" title="Creator Participant creating a Ship." alt="" coords="5,5,153,32"/>
+<area shape="rect" id="node2" href="$TransportCreator_8h.html" title="ConcreteCreator participant in the Factory Method pattern." alt="" coords="15,80,144,107"/>
+<area shape="rect" id="node3" href="$Transport_8h.html" title="Abstract Interface for the Factory Method for Transport used by a Shipment." alt="" coords="36,155,123,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="52,229,107,256"/>
+</map>

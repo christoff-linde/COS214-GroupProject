@@ -1,0 +1,5 @@
+<map id="System/Truck.h" name="System/Truck.h">
+<area shape="rect" id="node1" title="ConcreteProduct participant. Truck method of Transport." alt="" coords="97,5,211,32"/>
+<area shape="rect" id="node2" href="$Truck_8cpp.html" title="Implementation of Truck." alt="" coords="5,80,132,107"/>
+<area shape="rect" id="node3" href="$TruckCreator_8cpp.html" title="Creator Participant creating a Truck." alt="" coords="156,80,325,107"/>
+</map>

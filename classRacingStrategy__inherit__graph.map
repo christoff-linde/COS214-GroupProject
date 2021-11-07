@@ -1,0 +1,6 @@
+<map id="RacingStrategy" name="RacingStrategy">
+<area shape="rect" id="node1" title=" " alt="" coords="100,5,211,32"/>
+<area shape="rect" id="node2" href="$classAggressive.html" title=" " alt="" coords="5,80,92,107"/>
+<area shape="rect" id="node3" href="$classLaidBack.html" title=" " alt="" coords="117,80,194,107"/>
+<area shape="rect" id="node4" href="$classNeutral.html" title=" " alt="" coords="218,80,282,107"/>
+</map>

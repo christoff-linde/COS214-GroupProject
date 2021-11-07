@@ -1,0 +1,41 @@
+<map id="System/ElectronicsProduct.h" name="System/ElectronicsProduct.h">
+<area shape="rect" id="node1" title=" " alt="" coords="301,5,491,32"/>
+<area shape="rect" id="node2" href="$ElectronicsProduct_8cpp.html" title=" " alt="" coords="5,87,208,114"/>
+<area shape="rect" id="node3" href="$ElectronicsSimulationAdapter_8h.html" title=" " alt="" coords="232,80,427,121"/>
+<area shape="rect" id="node6" href="$Simulation__Demo__Main_8cpp.html" title=" " alt="" coords="373,169,545,211"/>
+<area shape="rect" id="node7" href="$EngineeringTeam_8h.html" title=" " alt="" coords="1867,87,2047,114"/>
+<area shape="rect" id="node4" href="$CsSimulation_8cpp.html" title=" " alt="" coords="932,483,1103,509"/>
+<area shape="rect" id="node5" href="$ElectronicsSimulationAdapter_8cpp.html" title=" " alt="" coords="97,169,292,211"/>
+<area shape="rect" id="node8" href="$AerodynamicsTeam_8h.html" title=" " alt="" coords="2411,177,2605,203"/>
+<area shape="rect" id="node10" href="$main_8cpp.html" title=" " alt="" coords="2140,483,2263,509"/>
+<area shape="rect" id="node11" href="$ChassisTeam_8h.html" title=" " alt="" coords="2629,177,2789,203"/>
+<area shape="rect" id="node13" href="$ElectronicsTeam_8h.html" title=" " alt="" coords="1763,177,1941,203"/>
+<area shape="rect" id="node15" href="$EngineTeam_8h.html" title=" " alt="" coords="2184,177,2336,203"/>
+<area shape="rect" id="node17" href="$EngineeringStore_8h.html" title=" " alt="" coords="1560,177,1739,203"/>
+<area shape="rect" id="node19" href="$EngineeringTeam_8cpp.html" title=" " alt="" coords="1965,177,2160,203"/>
+<area shape="rect" id="node20" href="$RaceCar_8h.html" title=" " alt="" coords="1064,177,1195,203"/>
+<area shape="rect" id="node9" href="$AerodynamicsTeam_8cpp.html" title=" " alt="" coords="2462,259,2671,285"/>
+<area shape="rect" id="node12" href="$ChassisTeam_8cpp.html" title=" " alt="" coords="2747,259,2922,285"/>
+<area shape="rect" id="node14" href="$ElectronicsTeam_8cpp.html" title=" " alt="" coords="1851,259,2042,285"/>
+<area shape="rect" id="node16" href="$EngineTeam_8cpp.html" title=" " alt="" coords="2118,259,2285,285"/>
+<area shape="rect" id="node18" href="$EngineeringStore_8cpp.html" title=" " alt="" coords="1584,259,1776,285"/>
+<area shape="rect" id="node21" href="$CarSimulationAdapter_8h.html" title=" " alt="" coords="955,259,1162,285"/>
+<area shape="rect" id="node23" href="$CharteredFlight_8h.html" title="Serves as specific method of transport for a RaceCar." alt="" coords="752,259,920,285"/>
+<area shape="rect" id="node25" href="$Shipment_8h.html" title="Shipment for a race, contains Containers as cargo and charteredFlight for the RaceCar." alt="" coords="586,333,721,360"/>
+<area shape="rect" id="node26" href="$LogisticsTeam_8h.html" title="Concrete Subscriber in the Observer pattern. LogisticsTeam is responsible for creating Shipments." alt="" coords="426,408,593,435"/>
+<area shape="rect" id="node29" href="$Components_8h.html" title=" " alt="" coords="1238,259,1391,285"/>
+<area shape="rect" id="node31" href="$Testing_8h.html" title=" " alt="" coords="1251,333,1373,360"/>
+<area shape="rect" id="node38" href="$RaceCar_8cpp.html" title=" " alt="" coords="1416,259,1560,285"/>
+<area shape="rect" id="node39" href="$Subscriber_8h.html" title="Subscriber participant in the Observer pattern." alt="" coords="367,333,510,360"/>
+<area shape="rect" id="node22" href="$CarSimulationAdapter_8cpp.html" title=" " alt="" coords="951,333,1171,360"/>
+<area shape="rect" id="node24" href="$CharteredFlight_8cpp.html" title="Serves as specific method of transport for a RaceCar." alt="" coords="745,333,927,360"/>
+<area shape="rect" id="node28" href="$Shipment_8cpp.html" title="Shipment for a race, contains Containers as cargo and charteredFlight for the RaceCar." alt="" coords="617,408,767,435"/>
+<area shape="rect" id="node27" href="$LogisticsTeam_8cpp.html" title="Concrete Subscriber in the Observer pattern. LogisticsTeam is responsible for creating Shipments." alt="" coords="419,483,599,509"/>
+<area shape="rect" id="node30" href="$Components_8cpp.html" title=" " alt="" coords="1589,483,1755,509"/>
+<area shape="rect" id="node32" href="$CsSimulation_8h.html" title=" " alt="" coords="1207,408,1364,435"/>
+<area shape="rect" id="node33" href="$Inactive_8h.html" title=" " alt="" coords="1055,408,1182,435"/>
+<area shape="rect" id="node36" href="$Testing_8cpp.html" title=" " alt="" coords="1561,408,1698,435"/>
+<area shape="rect" id="node37" href="$WindTunnel_8h.html" title=" " alt="" coords="1389,408,1537,435"/>
+<area shape="rect" id="node34" href="$Inactive_8cpp.html" title=" " alt="" coords="1127,483,1267,509"/>
+<area shape="rect" id="node35" href="$WindTunnel_8cpp.html" title=" " alt="" coords="1337,483,1500,509"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="System/Container.h" name="System/Container.h">
+<area shape="rect" id="node1" title="Abstract Interface for a Container." alt="" coords="309,5,444,32"/>
+<area shape="rect" id="node2" href="$CarPartContainer_8h.html" title="Container for CarPart&#39;s derived from Container." alt="" coords="93,80,271,107"/>
+<area shape="rect" id="node4" href="$Shipment_8h.html" title="Shipment for a race, contains Containers as cargo and charteredFlight for the RaceCar." alt="" coords="223,155,357,181"/>
+<area shape="rect" id="node8" href="$EquipmentContainer_8h.html" title="Container for EquipmentComposite derived from Container." alt="" coords="347,80,543,107"/>
+<area shape="rect" id="node10" href="$PartsContainer_8h.html" title="Container for Parts derived from Container." alt="" coords="604,80,771,107"/>
+<area shape="rect" id="node3" href="$CarPartContainer_8cpp.html" title="Container for CarPart&#39;s derived from Container." alt="" coords="5,155,199,181"/>
+<area shape="rect" id="node5" href="$LogisticsTeam_8h.html" title="Concrete Subscriber in the Observer pattern. LogisticsTeam is responsible for creating Shipments." alt="" coords="116,229,283,256"/>
+<area shape="rect" id="node7" href="$Shipment_8cpp.html" title="Shipment for a race, contains Containers as cargo and charteredFlight for the RaceCar." alt="" coords="307,229,457,256"/>
+<area shape="rect" id="node6" href="$LogisticsTeam_8cpp.html" title="Concrete Subscriber in the Observer pattern. LogisticsTeam is responsible for creating Shipments." alt="" coords="109,304,289,331"/>
+<area shape="rect" id="node9" href="$EquipmentContainer_8cpp.html" title="Container holding Equipment." alt="" coords="382,155,593,181"/>
+<area shape="rect" id="node11" href="$PartsContainer_8cpp.html" title="Container holding CarParts." alt="" coords="617,155,797,181"/>
+</map>

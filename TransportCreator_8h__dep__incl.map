@@ -1,0 +1,9 @@
+<map id="System/TransportCreator.h" name="System/TransportCreator.h">
+<area shape="rect" id="node1" title="ConcreteCreator participant in the Factory Method pattern." alt="" coords="191,5,369,32"/>
+<area shape="rect" id="node2" href="$ShipCreator_8h.html" title="Creator Participant creating a Ship." alt="" coords="13,80,161,107"/>
+<area shape="rect" id="node5" href="$TransportCreator_8cpp.html" title="Implementation of ConcreteCreator participant." alt="" coords="185,80,375,107"/>
+<area shape="rect" id="node6" href="$TruckCreator_8h.html" title="Creator Participant creating a Truck." alt="" coords="400,80,555,107"/>
+<area shape="rect" id="node3" href="$ShipCreator_8cpp.html" title="Creator Participant creating a Ship." alt="" coords="5,155,168,181"/>
+<area shape="rect" id="node4" href="$Shipment_8cpp.html" title="Shipment for a race, contains Containers as cargo and charteredFlight for the RaceCar." alt="" coords="205,155,355,181"/>
+<area shape="rect" id="node7" href="$TruckCreator_8cpp.html" title="Creator Participant creating a Truck." alt="" coords="393,155,562,181"/>
+</map>

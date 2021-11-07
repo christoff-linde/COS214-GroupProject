@@ -1,0 +1,7 @@
+<map id="System/RaceHandler.h" name="System/RaceHandler.h">
+<area shape="rect" id="node1" title=" " alt="" coords="41,5,195,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,155,60,181"/>
+<area shape="rect" id="node3" title=" " alt="" coords="139,229,198,256"/>
+<area shape="rect" id="node4" href="$RaceTrack_8h.html" title=" " alt="" coords="71,80,165,107"/>
+<area shape="rect" id="node5" href="$Team_8h.html" title="Team Facade that handles the initial scheduling of a Race." alt="" coords="136,155,201,181"/>
+</map>

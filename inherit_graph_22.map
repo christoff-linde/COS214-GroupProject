@@ -1,0 +1,8 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classVirtualCarPart.html" title=" " alt="" coords="5,107,108,133"/>
+<area shape="rect" id="node2" href="$classAerodynamicsSimulationAdapter.html" title=" " alt="" coords="156,5,367,32"/>
+<area shape="rect" id="node3" href="$classCarPartSimulationAdapter.html" title=" " alt="" coords="175,56,347,83"/>
+<area shape="rect" id="node4" href="$classChassisSimulationAdapter.html" title=" " alt="" coords="174,107,349,133"/>
+<area shape="rect" id="node5" href="$classElectronicsSimulationAdapter.html" title=" " alt="" coords="165,157,357,184"/>
+<area shape="rect" id="node6" href="$classEngineSimulationAdapter.html" title=" " alt="" coords="178,208,345,235"/>
+</map>

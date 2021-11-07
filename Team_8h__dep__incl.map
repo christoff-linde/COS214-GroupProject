@@ -1,0 +1,24 @@
+<map id="System/Team.h" name="System/Team.h">
+<area shape="rect" id="node1" title="Team Facade that handles the initial scheduling of a Race." alt="" coords="683,5,796,32"/>
+<area shape="rect" id="node2" href="$RaceTrack_8h.html" title=" " alt="" coords="589,80,732,107"/>
+<area shape="rect" id="node22" href="$Team_8cpp.html" title=" " alt="" coords="756,80,883,107"/>
+<area shape="rect" id="node3" href="$RaceHandler_8h.html" title=" " alt="" coords="386,162,541,189"/>
+<area shape="rect" id="node19" href="$RaceTrack_8cpp.html" title=" " alt="" coords="582,162,739,189"/>
+<area shape="rect" id="node20" href="$RaceTrackSimulationAdapter_8h.html" title=" " alt="" coords="773,155,967,196"/>
+<area shape="rect" id="node4" href="$FinalHandler_8h.html" title=" " alt="" coords="199,251,352,278"/>
+<area shape="rect" id="node14" href="$PracticeHandler_8h.html" title=" " alt="" coords="377,251,550,278"/>
+<area shape="rect" id="node16" href="$QualifyingHandler_8h.html" title=" " alt="" coords="575,251,757,278"/>
+<area shape="rect" id="node18" href="$RaceHandler_8cpp.html" title=" " alt="" coords="5,251,175,278"/>
+<area shape="rect" id="node5" href="$FinalHandler_8cpp.html" title=" " alt="" coords="105,333,272,360"/>
+<area shape="rect" id="node6" href="$Race_8h.html" title=" " alt="" coords="508,333,619,360"/>
+<area shape="rect" id="node7" href="$LogisticsTeam_8h.html" title="Concrete Subscriber in the Observer pattern. LogisticsTeam is responsible for creating Shipments." alt="" coords="336,483,503,509"/>
+<area shape="rect" id="node9" href="$Race_8cpp.html" title=" " alt="" coords="655,408,779,435"/>
+<area shape="rect" id="node10" href="$Shipment_8h.html" title="Shipment for a race, contains Containers as cargo and charteredFlight for the RaceCar." alt="" coords="496,408,631,435"/>
+<area shape="rect" id="node12" href="$Subscriber_8h.html" title="Subscriber participant in the Observer pattern." alt="" coords="277,408,420,435"/>
+<area shape="rect" id="node13" href="$main_8cpp.html" title=" " alt="" coords="803,408,926,435"/>
+<area shape="rect" id="node8" href="$LogisticsTeam_8cpp.html" title="Concrete Subscriber in the Observer pattern. LogisticsTeam is responsible for creating Shipments." alt="" coords="329,557,509,584"/>
+<area shape="rect" id="node11" href="$Shipment_8cpp.html" title="Shipment for a race, contains Containers as cargo and charteredFlight for the RaceCar." alt="" coords="527,483,677,509"/>
+<area shape="rect" id="node15" href="$PracticeHandler_8cpp.html" title=" " alt="" coords="297,333,483,360"/>
+<area shape="rect" id="node17" href="$QualifyingHandler_8cpp.html" title=" " alt="" coords="643,333,839,360"/>
+<area shape="rect" id="node21" href="$RaceTrackSimulationAdapter_8cpp.html" title=" " alt="" coords="782,244,977,285"/>
+</map>

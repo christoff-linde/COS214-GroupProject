@@ -1,0 +1,5 @@
+<map id="System/TruckCreator.h" name="System/TruckCreator.h">
+<area shape="rect" id="node1" title="Creator Participant creating a Truck." alt="" coords="95,5,249,32"/>
+<area shape="rect" id="node2" href="$Shipment_8cpp.html" title="Shipment for a race, contains Containers as cargo and charteredFlight for the RaceCar." alt="" coords="5,80,155,107"/>
+<area shape="rect" id="node3" href="$TruckCreator_8cpp.html" title="Creator Participant creating a Truck." alt="" coords="179,80,349,107"/>
+</map>

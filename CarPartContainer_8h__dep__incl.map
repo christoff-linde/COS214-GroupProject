@@ -1,0 +1,8 @@
+<map id="System/CarPartContainer.h" name="System/CarPartContainer.h">
+<area shape="rect" id="node1" title="Container for CarPart&#39;s derived from Container." alt="" coords="106,5,285,32"/>
+<area shape="rect" id="node2" href="$CarPartContainer_8cpp.html" title="Container for CarPart&#39;s derived from Container." alt="" coords="5,80,199,107"/>
+<area shape="rect" id="node3" href="$Shipment_8h.html" title="Shipment for a race, contains Containers as cargo and charteredFlight for the RaceCar." alt="" coords="223,80,357,107"/>
+<area shape="rect" id="node4" href="$LogisticsTeam_8h.html" title="Concrete Subscriber in the Observer pattern. LogisticsTeam is responsible for creating Shipments." alt="" coords="115,155,281,181"/>
+<area shape="rect" id="node6" href="$Shipment_8cpp.html" title="Shipment for a race, contains Containers as cargo and charteredFlight for the RaceCar." alt="" coords="306,155,455,181"/>
+<area shape="rect" id="node5" href="$LogisticsTeam_8cpp.html" title="Concrete Subscriber in the Observer pattern. LogisticsTeam is responsible for creating Shipments." alt="" coords="108,229,288,256"/>
+</map>

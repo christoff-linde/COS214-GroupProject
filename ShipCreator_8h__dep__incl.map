@@ -1,0 +1,5 @@
+<map id="System/ShipCreator.h" name="System/ShipCreator.h">
+<area shape="rect" id="node1" title="Creator Participant creating a Ship." alt="" coords="102,5,250,32"/>
+<area shape="rect" id="node2" href="$ShipCreator_8cpp.html" title="Creator Participant creating a Ship." alt="" coords="5,80,168,107"/>
+<area shape="rect" id="node3" href="$Shipment_8cpp.html" title="Shipment for a race, contains Containers as cargo and charteredFlight for the RaceCar." alt="" coords="192,80,341,107"/>
+</map>

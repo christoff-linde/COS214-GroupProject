@@ -1,0 +1,5 @@
+<map id="System/FoodCrate.h" name="System/FoodCrate.h">
+<area shape="rect" id="node1" title="Specific type of CateringEquipment." alt="" coords="143,5,283,32"/>
+<area shape="rect" id="node2" href="$EquipmentContainer_8cpp.html" title="Container holding Equipment." alt="" coords="5,80,216,107"/>
+<area shape="rect" id="node3" href="$FoodCrate_8cpp.html" title="Specific type of CateringEquipment." alt="" coords="240,80,395,107"/>
+</map>

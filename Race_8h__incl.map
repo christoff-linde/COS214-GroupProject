@@ -1,0 +1,11 @@
+<map id="System/Race.h" name="System/Race.h">
+<area shape="rect" id="node1" title=" " alt="" coords="110,5,221,32"/>
+<area shape="rect" id="node2" href="$PracticeHandler_8h.html" title=" " alt="" coords="180,80,305,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="143,304,198,331"/>
+<area shape="rect" id="node8" href="$QualifyingHandler_8h.html" title=" " alt="" coords="21,80,155,107"/>
+<area shape="rect" id="node9" href="$FinalHandler_8h.html" title=" " alt="" coords="330,80,435,107"/>
+<area shape="rect" id="node3" href="$RaceHandler_8h.html" title=" " alt="" coords="183,155,289,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="363,379,421,405"/>
+<area shape="rect" id="node6" href="$RaceTrack_8h.html" title=" " alt="" coords="285,229,379,256"/>
+<area shape="rect" id="node7" href="$Team_8h.html" title="Team Facade that handles the initial scheduling of a Race." alt="" coords="263,304,329,331"/>
+</map>

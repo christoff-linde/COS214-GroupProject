@@ -1,0 +1,8 @@
+<map id="System/CharteredFlight.h" name="System/CharteredFlight.h">
+<area shape="rect" id="node1" title="Serves as specific method of transport for a RaceCar." alt="" coords="103,5,271,32"/>
+<area shape="rect" id="node2" href="$CharteredFlight_8cpp.html" title="Serves as specific method of transport for a RaceCar." alt="" coords="5,80,188,107"/>
+<area shape="rect" id="node3" href="$Shipment_8h.html" title="Shipment for a race, contains Containers as cargo and charteredFlight for the RaceCar." alt="" coords="212,80,347,107"/>
+<area shape="rect" id="node4" href="$LogisticsTeam_8h.html" title="Concrete Subscriber in the Observer pattern. LogisticsTeam is responsible for creating Shipments." alt="" coords="104,155,271,181"/>
+<area shape="rect" id="node6" href="$Shipment_8cpp.html" title="Shipment for a race, contains Containers as cargo and charteredFlight for the RaceCar." alt="" coords="295,155,445,181"/>
+<area shape="rect" id="node5" href="$LogisticsTeam_8cpp.html" title="Concrete Subscriber in the Observer pattern. LogisticsTeam is responsible for creating Shipments." alt="" coords="97,229,277,256"/>
+</map>

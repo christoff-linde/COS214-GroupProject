@@ -1,0 +1,7 @@
+<map id="System/EquipmentComposite.h" name="System/EquipmentComposite.h">
+<area shape="rect" id="node1" title="Composite Participant. EquipmentComposite is composed of Equipment Components." alt="" coords="5,5,208,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="28,80,87,107"/>
+<area shape="rect" id="node3" href="$Equipment_8h.html" title="Abstract class for Equipment." alt="" coords="111,80,204,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="77,155,149,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="174,155,229,181"/>
+</map>
