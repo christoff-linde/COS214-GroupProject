@@ -1,6 +1,6 @@
 using namespace std;
 #include "WindTunnel.h"
-#include "inactive.h"
+#include "Inactive.h"
 
 #include <string>
 WindTunnel::WindTunnel(){
@@ -17,10 +17,10 @@ void WindTunnel::handleChange(Components* c){
     c->setState(new Inactive());
 }
 void WindTunnel::doTest(RaceCar* car){
-cout<<"Your team has "<<uses<<" uses left of the wind tunnel! "<<endl; 
+cout<<"Your team has "<<uses<<" uses left of the wind tunnel! "<<endl;
     if (uses > 0)
     {
-        
+
         //dotest
         if (car->getAerodynamics()->getDownForce() >=4000)
         {
@@ -48,12 +48,12 @@ cout<<"Your team has "<<uses<<" uses left of the wind tunnel! "<<endl;
             }
         }
 
-        
+
         uses--;
     }
     else{
         //cantdotest
-        cout<<"Your team has used the wind tunnel 400 times and may no longer use it."<<endl; 
+        cout<<"Your team has used the wind tunnel 400 times and may no longer use it."<<endl;
     }
 }
 
